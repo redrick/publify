@@ -5,22 +5,14 @@ login: &login
   username: postgres
   password:
 
-connection: &connection
-  encoding: unicode
-  pool: 5
-
-
 development:
   database: publify_dev
   <<: *login
-  <<: *connection
 
 test:
   database: publify_tests
   <<: *login
-  <<: *connection
 
 production:
   database: publify
   <<: *login
-  <<: *connection
