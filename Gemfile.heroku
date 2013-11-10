@@ -49,6 +49,7 @@ gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 gem 'carrierwave'
 gem 'akismet', '~> 1.0'
 gem 'twitter'
+gem 'thin'
 
 gem "jquery-rails", "~> 3.0.4"
 gem "jquery-ui-rails", "~> 4.0.4"
@@ -68,7 +69,6 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'thin'
   gem 'factory_girl', '~> 4.2.0'
   gem 'webrat'
   gem 'rspec-rails', '~> 2.14'
