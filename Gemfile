@@ -1,3 +1,5 @@
+ruby '1.9.3'
+
 require 'yaml'
 require 'erb'
 
