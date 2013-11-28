@@ -53,6 +53,7 @@ gem 'carrierwave'
 gem 'akismet', '~> 1.0'
 gem 'twitter'
 gem 'thin'
+gem 'newrelic_rpm'
 
 gem "jquery-rails", "~> 3.0.4"
 gem "jquery-ui-rails", "~> 4.0.4"
