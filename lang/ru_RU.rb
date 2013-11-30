@@ -23,8 +23,6 @@ Localization.define("ru_RU") do |l|
   l.store "Edit", "Редактировать"
   l.store "Unpublished", "Не опубликован"
   l.store "There are no %s yet. Why don't you start and create one?", "Ничего нет. Почему бы не начать и не добавить?" # XXX
-  l.store "Short url:", "Короткий URL:"
-  l.store "Edit", "Редактировать"
   l.store "Show", "Показать"
   l.store "Unpublished", "Неопубликован"
   l.store "Show help on Publify macros", "Показать помощь по Publify-макросам"
@@ -83,27 +81,11 @@ Localization.define("ru_RU") do |l|
   l.store "from %s to %s", "от %s на %s"
   l.store "Delete this redirection", "Удалить это перенаправление"
   l.store "Redirects", "Перенаправления"
-
   l.store "Your profile", "Ваш профиль"
-
   l.store "Titles", "Заголовки"
-
-  l.store "Permalinks", "Постоянные ссылки"
-
-  l.store "Your blog", "Ваш блог"
-  l.store "Blog name", "Имя блога"
-  l.store "Blog subtitle", "Подзаголовок блога"
-  l.store "Blog URL", "URL блога"
-  l.store "Language", "Язык"
-  l.store "Allow users to register", "Разрешить пользователям регистрироваться"
-  l.store "You can allow users to register to your blog. By default, they will register as contributors, an unpriviledged account level which grant them no rights but own a profile on the site. If you don't want users to register, you can thus add them by yourself in the users part of this admin.", "Вы можете разрешить пользователям регистрироваться в вашем блоге. По умолчанию они регистрируются как контрибьюторы, то есть получают непривелигированные учетные записи, которые не имеют никаких прав — только профиль на сайте. Если вы не хотите давать пользователям возможность регистрироваться, вы можете добавлять их вручную в разделе «пользователи» панели администратора"
-  l.store "Items to display in admin lists", "Элементы для отображения в администраторских списках"
   l.store "Show full article on feed", "Показывать полные версии статей в ленте"
   l.store "Feedburner ID", ""
-  l.store "General settings", "Главные настройки"
   l.store "You can use your Google Feedburner account instead of Publify feed URL. To enable this, fill this form with your Feedburner ID.", "Вы можете использовать учетную запись сервиса Google Feedburner вместо использования URL’а, которые дает Publify. Для этого введите в форму свой Feedburner ID."
-
-  # app/views/articles/_comment_box.html.erb
   l.store "Your name", "Ваше имя"
   l.store "Your email", "Ваш email"
   l.store "Your message", "Ваше сообщение"

@@ -173,47 +173,6 @@ Localization.define("fr_FR") do |l|
   l.store "Titles", "Titre des pages"
   l.store "You robots.txt file is not writeable. Publify won't be able to write it", "Publify ne peut pas écrire dans votre fichier robots.txt."
 
-  # app/views/admin/seo/permalinks.html.erb
-  l.store "Publify offers you the ability to create a custom URL structure for your permalinks and archives. This can improve the aesthetics, usability, and forward-compatibility of your links.", "Les exemples ci-dessous vous aideront à démarrerPublify vous offre la possibilité de créer une structure d'URL personnalisée pour vos liens permanents et vos archives. Cela peut vous permettre d'améliorer l'esthétique, l'utilisabilité et la viralité de vos liens."
-  l.store "Here are some examples to get you started.", "Les exemples ci-dessous vous aideront à démarrer."
-  l.store "Permalink format", "Format des permaliens"
-  l.store "Date and title", "Date et titre"
-  l.store "Month and title", "Mois et titre"
-  l.store "Title only", "Titre uniquement"
-  l.store "You can custom your URL structure using the following tags:", "Vous pouvez personnaliser la structure de vos URL à l'aide des tags suivats:"
-  l.store "your article slug. <strong>Using this slug is mandatory</strong>.", "le permalien de votre article <strong>ce champ est obligatoire</strong>"
-  l.store "your article year of publication.", "L'année de publication de votre article."
-  l.store "your article month of publication.", "Le mois de publication de votre article."
-  l.store "your article day of publication.", "Le jour de publication de votre article."
-  l.store "Permalinks", "Permaliens"
-  l.store "Custom", "Personnalisé"
-
-  # app/views/admin/seo/titles.html.erb
-  l.store "Title settings", "Paramétrage des titres"
-  l.store "Title template", "Titre"
-  l.store "Description template", "Description"
-  l.store "Paginated archives", "Archives paginées"
-  l.store "Dated archives", "Archives par date"
-  l.store "Author page", "Page d'auteur"
-  l.store "Search results", "Résultats de recherche"
-  l.store "Help on title settings", "Aide sur le Paramétrage des titres"
-  l.store "Replaced with the title of the article/page", "Remplacé par le titre de l'article ou de la page"
-  l.store "The blog's name", "Le nom du blog"
-  l.store "The blog's tagline / description", "Le sous-titre du blog"
-  l.store "Replaced with the post/page excerpt", "Remplacé par l'introduction de l'article ou de la page"
-  l.store "Replaced with the article tags (comma separated)", "Remplacé par les tags de l'article (séparés par une virgule)"
-  l.store "Replaced with the article categories (comma separated)", "Remplacé par les catégories de l'article (séparées par une virgule)"
-  l.store "Replaced with the article/page title", "Remplacé par le titre de l'article ou de la page"
-  l.store "Replaced with the category/tag name", "Remplacé par le nom de la catégorie ou du mot-clé"
-  l.store "Replaced with the current search phrase", "Remplacé avec le contenu de la recherche"
-  l.store "Replaced with the current time", "Remplacé par l'heure actuelle"
-  l.store "Replaced with the current date", "Remplacé par la date du jour"
-  l.store "Replaced with the current month", "Remplacé par le mois en cours"
-  l.store "Replaced with the current year", "Remplacé par l'année en cours"
-  l.store "Replaced with the current page number", "Remplacé par le numéro de la page"
-  l.store "Replaced by the archive date", "Remplacé par la date de l'archive"
-  l.store "These tags can be included in your templates and will be replaced when displaying the page.", "Ces tags peuvent être ajoutés dans le template et seront remplacés lors de l'affichage de la page"
-
   # app/views/admin/settings/errors.html.erb
   l.store "Error 404", "Erreur 404 (le document demandé n'existe pas)"
   l.store "Message", "Message"
@@ -242,54 +201,19 @@ Localization.define("fr_FR") do |l|
   l.store "Enable reCaptcha", "Utiliser reCaptcha"
   l.store "Remember to set your reCaptcha keys inside config/initializers/recaptcha.rb", "N'oubliez pas de mettre votre clé d'activation dans config/initializers/recaptcha.rb"
   l.store "Feedback settings", "Paramètres des commentaires"
-
-  # app/views/admin/settings/index.html.erb
-  l.store "Your blog", "Votre blog "
-  l.store "Blog name", "Titre du blog"
-  l.store "Blog subtitle", "Sous-titre du blog"
-  l.store "Blog URL", "Adresse du blog"
-  l.store "Language", "Langue"
-  l.store "Allow users to register", "Autoriser les utilisateurs à s'enregistrer"
-  l.store "You can allow users to register to your blog. By default, they will register as contributors, an unpriviledged account level which grant them no rights but own a profile on the site. If you don't want users to register, you can thus add them by yourself in the users part of this admin.", "Vous pouvez permettre aux utilisateurs de s'enregistrer sur votre blog. Par défaut, ils seront enregistrés come contributeurs. Cet utilisateur a un niveau faible sans droit mais qui possède sont propre profile sur le site. Si vous ne voulez pas que les utilisateurs s'enregistrent, vous pouvez les ajouter vous même dans la partie d'administration des utilisateurs."
-  l.store "Publify can notify you when new articles or comments are posted", "Publify peut vous alerter quand de nouveaux articles et commentaires sont publiés"
-  l.store "Source Email", "Adresse courriel source"
-  l.store "Email address used by Publify to send notifications", "Adresse courriel utilisée par Publify pour l'envoi d'alertes"
-  l.store "Items to display in admin lists", "Nombre d'éléments à afficher dans les listes"
   l.store "Date format", "Afficher les dates"
   l.store "ago", "il y a"
   l.store "Time format", "Afficher les heures"
   l.store "Publishing options", "Options de publication"
-  l.store "Display", "Afficher"
   l.store "articles on my homepage by default", "billet sur ma page d'accueil params par défaut"
   l.store "articles in my news feed by default", "billets dans mon flux RSS par défaut"
   l.store "Show only article excerpt on feed", "Tronquer les articles dans le flux RSS"
   l.store "Feedburner ID", "Identifiant Feedburner"
   l.store "You can use your Google Feedburner account instead of Publify feed URL. To enable this, fill this form with your Feedburner ID.", "Vous pouvez utiliser votre compte Google Feedburner plutôt que votre adresse de flux Publify. Pour l'autoriser, remplissez ce formulaire avec votre identifiant Feedburner."
-
-  # app/views/admin/settings/update_database.html.erb
-  l.store "Information", "Informations"
-  l.store "Current database version", "Version actuelle de la base"
   l.store "New database version", "Nouvelle version de la base"
   l.store "Your database supports migrations", "Votre base de données supporte la mise à jour"
-  l.store "Needed migrations", "Mise à jour nécessaire"
-  l.store "You are up to date!", "Vous êtes à jour !"
-  l.store "Update database now", "Mettez votre base à jour"
-  l.store "may take a moment", "cela peut prendre un moment"
-  l.store "Database migration", "Mise à jour de la base de données"
   l.store "yes", "oui"
   l.store "no", "non"
-
-  # app/views/admin/settings/write.html.erb
-  l.store "Send trackbacks", "Envoyer des rétroliens"
-  l.store "When publishing articles, Publify can send trackbacks to websites that you link to. This should be disabled for private blogs as it will leak non-public information to sites that you're discussing. For public blogs, there's no real point in disabling this.", "Quand vous publiez un billet sur Publify, vous pouvez envoyer un rétrolien aux sites que vous liez. Cette fonctionnalité devrait être désactivée pour les blogs privée puisqu'elle permet de donner des informations à leur sujet à des tiers. Ceci ne s'impose cependant pas pour un blog public."
-  l.store "URLs to ping automatically", "Sites à alerter automatiquement"
-  l.store "Latitude, Longitude", "Latitude, Longitude"
-  l.store "your latitude and longitude", "vos coordonnées géographiques"
-  l.store "example", "exemple"
-  l.store "Media", "Média"
-  l.store "Image thumbnail size", "Taille des vignettes"
-  l.store "Image medium size", "Taille des images réduites"
-  l.store "Write", "Écrire"
 
   # app/views/admin/shared/destroy.html.erb
   l.store "Changes published", "Modifications publiées"
@@ -378,51 +302,28 @@ Localization.define("fr_FR") do |l|
   l.store "Comments", "Commentaires"
   l.store "State", "État"
   l.store "%s user", "%s"
-  l.store "Users", "Utilisateurs"
   l.store "Manage users", "Gérer les utilisateurs"
 
   # app/views/admin/users/new.html.erb
   l.store "Add User", "Ajouter un utilisateur"
-
-  # app/views/articles/_article.html.erb
   l.store "Posted by", "Publié par"
-
   # app/view/admin/
   l.store "All notes", "Toutes les notes"
   l.store "Statuses", "Notes"
-
-
-
-  # app/views/articles/_article_excerpt.html.erb
   l.store "Continue reading", "Lire plus"
-
-  # app/views/articles/_comment_failed.html.erb
   l.store "Oops, something wrong happened, the comment could not be saved", "Oops, quelque chose s'est mal déroulé. Votre commentaire n'a donc pu être enregistré."
-
-  # app/views/articles/_comment_form.html.erb
   l.store "Your name", "Votre nom "
   l.store "Your email", "Votre courriel"
   l.store "Your message", "Votre commentaire"
   l.store "Comment Markup Help", "Aide sur le balisage des commentaires"
   l.store "Preview comment", "Prévisualiser le commentaire"
   l.store "leave url/email", "laissez votre url/courriel"
-
-  # app/views/articles/_comment_list.html.erb
   l.store "No comments", "Pas de commentaires"
-
-  # app/views/articles/archives.html.erb
   l.store "No articles found", "Aucun article ne correspond à la recherche"
   l.store "posted in", "publié dans"
-
-  # app/views/articles/comment_preview.html.erb
   l.store "is about to say", "va dire"
-
-  # app/views/articles/groupings.html.erb
   l.store "There are", "Il y a"
-
-  # app/views/articles/read.html.erb
   l.store "Leave a response", "Réagir à ce billet"
-  l.store "Trackbacks", "Rétroliens"
   l.store "Use the following link to trackback from your own site", "Utilisez le lien ci-dessous pour envoyer un rétrolien depuis votre site"
   l.store "RSS feed for this post", "Flux RSS de ce billet"
   l.store "trackback uri", "URL de rétrolien"
@@ -512,7 +413,6 @@ Localization.define("fr_FR") do |l|
   l.store "You can leave a %s", "Vous pouvez déposer un %s"
   l.store "or a %s from your own site", "ou un %s depuis votre site"
   l.store "Read full article", "Lire l'article complet"
-  l.store "trackback", "rétrolien"
 
   # themes/standard_issue/views/articles/_comment_form.html.erb
   l.store "Name %s", "Votre nom %s"
@@ -642,7 +542,6 @@ Localization.define("fr_FR") do |l|
   l.store "Metadata was successfully removed.", "Les métadonnées ont été supprimées avec succès."
   l.store "Mon", "Lun"
   l.store "Monday", "Lundi"
-  l.store "New Redirect", ""
   l.store "No", "Non"
   l.store "Not published by Apple", "Donnée non publiée par Apple"
   l.store "Notification", "Notifications"

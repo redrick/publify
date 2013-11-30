@@ -9,8 +9,6 @@ Localization.define("nl_NL") do |l|
   l.store "login", "inloggen"
   l.store "signup", "aanmelden"
   l.store "Recover your password", "Herstel uw wachtwoord"
-
-  # app/controllers/admin/categories_controller.rb
   l.store "Category was successfully saved.", "Categorie succesvol opgeslagen."
   l.store "Category could not be saved.", "Categorie kon niet opgeslagen worden."
 
@@ -52,8 +50,6 @@ Localization.define("nl_NL") do |l|
 
   # app/controllers/admin/sidebar_controller.rb
   l.store "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually", "Het lijkt er op dat er iets fout ging. Misschien ontbreken sommige zijbalken en moet je ze opnieuw installeren of handmatig verwijderen"
-
-  # app/controllers/admin/tags_controller.rb
   l.store "Tag was successfully updated.", "Tag was succesvol bijgewerkt."
 
   # app/controllers/admin/themes_controller.rb
@@ -61,14 +57,7 @@ Localization.define("nl_NL") do |l|
   l.store "You are not authorized to open this file", "U bent niet geautoriseerd om dit bestand te openen"
   l.store "File saved successfully", "Bestand succesvol opgeslagen"
   l.store "Unable to write file", "Kon het bestand niet schrijven"
-
-  # app/controllers/admin/users_controller.rb
   l.store "User was successfully created.", "Gebruiker succesvol aangemaakt."
-
-  # app/controllers/application_controller.rb
-  l.store "Localization.rtl", ""
-
-  # app/controllers/articles_controller.rb
   l.store "No posts found...", "Geen berichten gevonden..."
   l.store "Archives for", "Archieven voor"
   l.store "Archives for ", "Archieven voor "
@@ -131,19 +120,11 @@ Localization.define("nl_NL") do |l|
   l.store "Spam?", "Spam?"
   l.store "Just Marked As Spam", "Zojuist gemarkeerd als Spam"
   l.store "Spam", "Spam"
-
-  # app/views/admin/categories/_categories.html.erb
   l.store "Reorder", "Orden opnieuw"
   l.store "Sort alphabetically", "Sorteer alfabetisch"
-
-  # app/views/admin/categories/destroy.html.erb
   l.store "Are you sure you want to delete the category ", "Weet je zeker dat je de categorie wilt verwijderen?"
   l.store "Delete this category", "Verwijder deze categorie"
-
-  # app/views/admin/categories/new.html.erb
   l.store "%s Category", "%s Categorie"
-
-  # app/views/admin/categories/reorder.html.erb
   l.store "(Done)", "(Gedaan)"
 
   # app/views/admin/content/_attachment.html.erb
@@ -163,7 +144,6 @@ Localization.define("nl_NL") do |l|
   # app/views/admin/content/destroy.html.erb
   l.store "Are you sure you want to delete this article", "Weet je zeker dat je dit artikel wilt verwijderen?"
   l.store "Delete this article", "Verwijder dit artikel"
-  l.store "Articles", "Artikelen"
 
   # app/views/admin/content/index.html.erb
   l.store "Search articles that contain ...", "Zoek artikelen met ..."
@@ -197,7 +177,6 @@ Localization.define("nl_NL") do |l|
   l.store "Comments for", "Commentaren voor"
   l.store "Search Comments and Trackbacks that contain", "Zoek commentaren en trackbacks die bevatten"
   l.store "Page settings", "Pagina instellingen"
-  l.store "Pages", "Pagina's"
   l.store "Are you sure you want to delete the page", "Weet je zeker dat je deze pagina wilt verwijderen"
   l.store "Delete this page", "Verwijder deze pagina"
   l.store "Your profile", "Je profiel"
@@ -219,9 +198,6 @@ Localization.define("nl_NL") do |l|
   l.store "Enable gravatars", "Enable gravatars"
   l.store "Show your email address", "Toon je e-mail adres"
   l.store "Notifications", "Notificaties"
-  l.store "Publify can notify you when new articles or comments are posted", "Publify can je notificeren wanneer nieuwe artikelen of commentaren gepost worden"
-  l.store "Source Email", "Bron e-mail"
-  l.store "Email address used by Publify to send notifications", "E-mail adres dat Publify gebruikt om notificaties te versturen"
   l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "Het aanzetten van spambescherming zorgt dat publify het IP-adres en de inhoud van reacties vergelijkt met lokale en centrale zwarte lijsten. Een goede bescherming tegen spam robots"
   l.store "Enable spam protection", "Gebruik spam-bescherming"
   l.store "Akismet Key", "Akismet sleutel"
@@ -234,23 +210,11 @@ Localization.define("nl_NL") do |l|
   l.store "Max Links", "Max links"
   l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Publify zal automatisch commentaren en trackbacks verwijderen die meer dan een bepaald aantal links bevatten"
   l.store "Set to 0 to never reject comments", "Zet op 0 om commentaren nooit te weigeren"
-
-  # app/views/admin/settings/index.html.erb
-  l.store "Your blog", "Je blog"
-  l.store "Blog name", "Blog naam"
-  l.store "Blog subtitle", "Blog ondertitel"
-  l.store "Blog URL", "Blog URL"
-  l.store "Language", "Taal"
-  l.store "Allow users to register", "Sta gebruikers toe zich te registreren"
-  l.store "You can allow users to register to your blog. By default, they will register as contributors, an unpriviledged account level which grant them no rights but own a profile on the site. If you don't want users to register, you can thus add them by yourself in the users part of this admin.", "Je kunt gebruikers toestaan zich te registreren bij je blog. Standaard zullen ze contributors worden, een soort account zonder rechten behalve het hebben van een profiel op de site. Als je niet wilt dat gebruikers zich registreren kun je ze altijd zelf toevoegen in het gebruikers deel."
-  l.store "Items to display in admin lists", ""
   l.store "Publishing options", "Publicatie opties"
-  l.store "Display", "Toon"
   l.store "articles on my homepage by default", "artikelen op mijn startpagina"
   l.store "articles in my news feed by default", "artikelen in mijn news feed"
   l.store "Show full article on feed", "Toon volledig artikel in feed"
   l.store "Feedburner ID", "Feedburner ID"
-  l.store "General settings", "Algemene instellingen"
   l.store "You can use your Google Feedburner account instead of Publify feed URL. To enable this, fill this form with your Feedburner ID.", "Je kunt je Google Feedburner account gebruiken in plaats van de Publify feed URL. Vul daartoe in dit formulier je Feedburner ID in."
 
   # app/views/admin/settings/seo.html.erb
@@ -261,28 +225,10 @@ Localization.define("nl_NL") do |l|
   l.store "Search Engine Optimization", "Zoekmachine optimalisatie"
 
   # app/views/admin/settings/update_database.html.erb
-  l.store "Information", "Informatie"
-  l.store "Current database version", "Huidige database versie"
   l.store "New database version", "Nieuwe database versie"
   l.store "Your database supports migrations", "Je database ondersteunt migraties"
-  l.store "Needed migrations", "Benodigde migraties"
-  l.store "You are up to date!", "Je bent bij de tijd!"
-  l.store "Update database now", "Werk database nu bij"
-  l.store "may take a moment", "kan even duren"
-  l.store "Database migration", "Database migratie"
   l.store "yes", "ja"
   l.store "no", "nee"
-
-  # app/views/admin/settings/write.html.erb
-  l.store "Send trackbacks", "Verstuur trackbacks"
-  l.store "When publishing articles, Publify can send trackbacks to websites that you link to. This should be disabled for private blogs as it will leak non-public information to sites that you're discussing. For public blogs, there's no real point in disabling this.", "Wanneer je een artikel publiceert kan Publify een trackback sturen naar de sites waaraan je linkt. Dit zou voor priv&eacute;-blogs uit moeten staan, omdat het niet-publieke informatie 'lekt' naar sites die je bediscussieert. Voor publieke blogs is er geen goede reden om het uit te zetten."
-  l.store "URLs to ping automatically", ""
-  l.store "Latitude, Longitude", ""
-  l.store "your latitude and longitude", ""
-  l.store "example", ""
-  l.store "Write", "Schrijf"
-
-  # app/views/admin/sidebar/_publish.html.erb
   l.store "Changes published", "Wijzigingen gepubliceerd"
 
   # app/views/admin/sidebar/_target.html.erb
@@ -323,9 +269,6 @@ Localization.define("nl_NL") do |l|
   # app/views/admin/themes/index.html.erb
   l.store "Active theme", "Actieve thema's"
   l.store "Choose a theme", "Kies een thema"
-  l.store "Use this theme", ""
-
-  # app/views/admin/users/_form.html.erb
   l.store "Account settings", "Account instellingen"
   l.store "Password confirmation", "Bevestig wachtwoord"
   l.store "User's status", "Status van de gebruiker"
@@ -353,65 +296,34 @@ Localization.define("nl_NL") do |l|
   l.store "Your Twitter username", "Je Twitter gebruikersnaam"
   l.store "display Twitter on public profile", "toon twitter op publiek profiel"
   l.store "Tell us more about you", "Vertel ons meer over jezelf"
-
-  # app/views/admin/users/destroy.html.erb
   l.store "Really delete user", "Gebruiker echt verwijderen"
   l.store "Yes", "Ja"
-  l.store "Users", "Gebruikers"
-
-  # app/views/admin/users/edit.html.erb
   l.store "Edit User", "Gebruiker wijzigen"
-
-  # app/views/admin/users/index.html.erb
   l.store "New User", "Nieuwe gebruikers"
   l.store "Comments", "Reacties"
   l.store "%s user", "%s gebruiker"
-
-  # app/views/admin/users/new.html.erb
   l.store "Add User", "Gebruiker toevoegen"
-
-  # app/views/articles/_article.html.erb
   l.store "Posted by", "Geplaatst door"
   l.store "Continue reading", "Verder lezen"
-
-  # app/views/articles/_comment.html.erb
   l.store "said", "zei"
   l.store "This comment has been flagged for moderator approval.  It won't appear on this blog until the author approves it", "Dit commentaar is gemarkeerd voor goedkeuring. Het zal niet getoond worden totdat de auteur het goedkeurt."
-
-  # app/views/articles/_comment_box.html.erb
   l.store "Your name", "Jouw naam"
   l.store "Your email", "Jouw e-mail"
   l.store "Your message", "Jouw bericht"
   l.store "Comment Markup Help", ""
   l.store "Preview comment", "Bekijk reactie"
   l.store "leave url/email", "plaats url/e-mail"
-
-  # app/views/articles/_comment_failed.html.erb
   l.store "Oops, something wrong happened, the comment could not be saved", "Er is iets mis gegaan en je reactie is niet bewaard"
-
-  # app/views/articles/_trackback.html.erb
   l.store "From", "Van"
-
-  # app/views/articles/archives.html.erb
   l.store "No articles found", "Geen artikelen gevonden"
   l.store "posted in", "geplaatst in"
-
-  # app/views/articles/comment_preview.html.erb
   l.store "is about to say", "gaat zeggen"
-
-  # app/views/articles/groupings.html.erb
   l.store "There are", "Er zijn"
-
-  # app/views/articles/read.html.erb
   l.store "Leave a response", "Geef een reactie"
-  l.store "Trackbacks", "Trackbacks"
   l.store "Use the following link to trackback from your own site", "Gebruik de volgende link voor een trackback van jouw site"
   l.store "RSS feed for this post", "RSS feed voor dit bericht"
   l.store "trackback uri", "trackback uri"
   l.store "Comments are disabled", "Reacties zijn niet mogelijk"
-  l.store "Trackbacks are disabled", ""
-
-  # app/views/authors/show.html.erb
   l.store "Web site:", "Website:"
   l.store "MSN:", "MSN:"
   l.store "Yahoo:", "Yahoo:"
@@ -440,8 +352,6 @@ Localization.define("nl_NL") do |l|
   # test/mocks/themes/typographic/layouts/default.html.erb
   l.store "Powered by %s", "Powered by %s"
   l.store "Designed by %s ", "Ontworpen door %s"
-
-  # test/mocks/themes/typographic/views/articles/_article.html.erb
   l.store "Continue reading...", "Lees meer..."
   l.store "This entry was posted on %s", "Dit bericht was geplaatst op %s"
   l.store "and %s", "en %s"
@@ -452,11 +362,7 @@ Localization.define("nl_NL") do |l|
   l.store "Read full article", "Lees volledige artikel"
   l.store "comment", "reactie"
   l.store "trackback", "trackback"
-
-  # test/mocks/themes/typographic/views/articles/_comment.html.erb
   l.store "later", "later"
-
-  # test/mocks/themes/typographic/views/articles/_comment_form.html.erb
   l.store "Leave a comment", "Geef een reactie"
   l.store "Name %s", "Naam %s"
   l.store "enabled", "aangezet"
@@ -465,8 +371,6 @@ Localization.define("nl_NL") do |l|
   l.store "Textile enabled", "Textile beschikbaar"
   l.store "Markdown enabled", "Markdown beschikbaar"
   l.store "required", "verplicht"
-
-  # test/mocks/themes/typographic/views/articles/_comment_list.html.erb
   l.store "No comments", "Geen reacties"
 
   # test/mocks/themes/typographic/views/shared/_search.html.erb
@@ -478,36 +382,11 @@ Localization.define("nl_NL") do |l|
 
   # themes/scribbish/layouts/default.html.erb
   l.store "styled with %s", ""
-
-  # themes/scribbish/views/articles/_article.html.erb
-  l.store "Meta", ""
-
-  # themes/true-blue-3/helpers/theme_helper.rb
   l.store "You are here: ", "Je bent hier: "
   l.store "%d comment", ""
-
-  # themes/true-blue-3/views/articles/_article.html.erb
-  l.store "%%a, %%d %%b %%Y %%H:%%M", ""
-
-  # themes/true-blue-3/views/articles/_comment.html.erb
   l.store "later:", "later:"
-
-  # themes/true-blue-3/views/articles/_comment_form.html.erb
   l.store "Email address", "E-mailadres"
   l.store "Your website", "Je website"
-
-  # themes/true-blue-3/views/articles/read.html.erb
-  l.store "If you liked this article you can %s", ""
-  l.store "add me to Twitter", ""
-  l.store "Trackbacks for", ""
-
-  # themes/true-blue-3/views/articles/search.html.erb
-  l.store "Search results for:", ""
-
-  # themes/true-blue-3/views/categories/index.html.erb
-  l.store "Read all articles in %s", ""
-
-  # themes/true-blue-3/views/categories/show.html.erb
   l.store "Previous", "Vorige"
 
   # vendor/plugins/archives_sidebar/views/content.rhtml

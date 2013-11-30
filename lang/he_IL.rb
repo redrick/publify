@@ -10,11 +10,6 @@ Localization.define("he_IL") do |l|
   l.store "login", ""
   l.store "signup", ""
   l.store "Recover your password", ""
-
-  # app/controllers/admin/categories_controller.rb
-  l.store "Category was successfully saved.", ""
-  l.store "Category could not be saved.", ""
-
   # app/controllers/admin/content_controller.rb
   l.store "Error, you are not allowed to perform this action", "שגיאה, אינך רשאי לבצע פעולה זו"
   l.store "Preview", "תצוגה מקדימה"
@@ -52,8 +47,6 @@ Localization.define("he_IL") do |l|
 
   # app/controllers/admin/sidebar_controller.rb
   l.store "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually", ""
-
-  # app/controllers/admin/tags_controller.rb
   l.store "Tag was successfully updated.", "התוית עודכנה בהצלחה."
 
   # app/controllers/admin/themes_controller.rb
@@ -71,7 +64,6 @@ Localization.define("he_IL") do |l|
   l.store "Delete content", "מחק תוכן"
   l.store "Are you sure?", "האם אתה בטוח? "
   l.store "Please select", "אנא בחר"
-  l.store "All categories", ""
   l.store "All authors", ""
   l.store "All published dates", ""
   l.store "There are no %s yet. Why don't you start and create one?", ""
@@ -113,18 +105,10 @@ Localization.define("he_IL") do |l|
   l.store "Spam?", "ספאם ?"
   l.store "Just Marked As Spam", "סומן כספאם"
 
-  # app/views/admin/categories/_categories.html.erb
   l.store "Reorder", "סדר מחדש"
   l.store "Sort alphabetically", "מיין לפי האלף-בית"
-
-  # app/views/admin/categories/destroy.html.erb
   l.store "Are you sure you want to delete the category ", "האם אתה בטוח שברצונך למחוק את הקטגורייה ?"
   l.store "Delete this category", "מחק קטגורייה זו"
-
-  # app/views/admin/categories/new.html.erb
-  l.store "%s Category", ""
-
-  # app/views/admin/categories/reorder.html.erb
   l.store "(Done)", "(בוצע)"
 
   # app/views/admin/content/_attachment.html.erb
@@ -142,7 +126,6 @@ Localization.define("he_IL") do |l|
   # app/views/admin/content/destroy.html.erb
   l.store "Are you sure you want to delete this article", "האם אתה בטוח שברצונך למחוק כתבה זו"
   l.store "Delete this article", "מחק כתבה זו"
-  l.store "Articles", "כתבות"
   l.store "Most popular", "הכי פופלריים"
   l.store "Nothing to show yet", "אין מה להציג כרגע"
   l.store "No posts yet, why don't you start and write one", "אין כתבות עדיין, למה שלא תתחיל לכתוב כתבה חדשה"
@@ -156,7 +139,6 @@ Localization.define("he_IL") do |l|
   l.store "Limit to spam", "סווג כספאם"
   l.store "Comments for", "תגובות על"
   l.store "Search Comments and Trackbacks that contain", "חפש תגובות או עוקבים-חזרה המכילים"
-  l.store "Pages", "דפים"
   l.store "Are you sure you want to delete the page", "האם אתה בטוח שברצונך למחוק דף זה ?"
   l.store "Delete this page", "מחק דף זה"
   l.store "Previous page", "הדף הקודם"
@@ -172,10 +154,6 @@ Localization.define("he_IL") do |l|
   l.store "Comments filter", "מסנן התגובות"
   l.store "Enable gravatars", "אפשר דמויות"
   l.store "Show your email address", "הצג את כתובת הדואל שלך"
-  l.store "Notifications", ""
-  l.store "Publify can notify you when new articles or comments are posted", "Publify יכולה לעדכן אותך בעת שמאמרים חדשים או תגובות נשלחות."
-  l.store "Source Email", "דואל המקור"
-  l.store "Email address used by Publify to send notifications", "כתובת הדואל שתשמש את Publify לשלוח עדכונים"
   l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "אפשור הגנת ספאם תגרום ל-Publify להשוות כתובות ה-IP של השולחים ואת תוכן השליחה כנגד רשימות שחורות מקומיות או מרוחקות - הגנה טובה כנגד רובוטי ספאם."
   l.store "Enable spam protection", "אפשר הגנת ספאם"
   l.store "Akismet Key", "מפתח Akismet"
@@ -188,50 +166,15 @@ Localization.define("he_IL") do |l|
   l.store "Max Links", "מקסימום קישורים"
   l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Publify תדחה אוטומטית תגובות ועוקבים-חזרה המכילים את כמות הקישורים מסויימת"
   l.store "Set to 0 to never reject comments", "הגדר כ-0 כדי לא לדחות תגובות לעולם"
-
-  # app/views/admin/settings/index.html.erb
-  l.store "Your blog", "הבלוג שלך"
-  l.store "Blog name", "שם הבלוג"
-  l.store "Blog subtitle", "כותרת משנה"
-  l.store "Blog URL", "כתובת הבלוג"
-  l.store "Language", "שפה"
-  l.store "Allow users to register", "אפשר למשתמשים להירשם"
-  l.store "You can allow users to register to your blog. By default, they will register as contributors, an unpriviledged account level which grant them no rights but own a profile on the site. If you don't want users to register, you can thus add them by yourself in the users part of this admin.", "תוכל לאפשר למשתמשים להירשם לבלוג שלך. כברירת מחדל, הם יירשמו כתורמים - חשבון שאינו נותן הרשאות מיוחדות אלא רק את הזכות להחזיק  חשבון באתר. אם אינך רוצה שהמשתמשים יוכלו להירשם בעצמם, תוכל להוסיף אותם בעצמך כחללק מדף זה"
-  l.store "Items to display in admin lists", ""
-  l.store "Publishing options", ""
-  l.store "Display", "תצוגה"
   l.store "articles on my homepage by default", "כתבות בדף הבית שלי"
   l.store "articles in my news feed by default", "כתבות במזין החדשות שלי"
   l.store "Show full article on feed", "הצג כתבה מלאה במזין החדשות"
   l.store "Feedburner ID", ""
   l.store "Search Engine Optimisation", "אופטימיזצית מנוע חיפוש"
-  l.store "Format of permalink", ""
-  l.store "Meta description", ""
-  l.store "Search Engine Optimization", ""
-
-  # app/views/admin/settings/update_database.html.erb
-  l.store "Information", "מידע"
-  l.store "Current database version", "גרסת בסיס הנתונים הנוכחית"
   l.store "New database version", "גירסת בסיס הנתונים החדשה"
   l.store "Your database supports migrations", "בסיס הנתונים שלך תומך בעדכונים"
-  l.store "Needed migrations", "עדכונים נדרשים"
-  l.store "You are up to date!", "בסיס הנתונים שלך מעודכן !"
-  l.store "Update database now", "עדכן את בסיס הנתונים"
-  l.store "may take a moment", "ייתכן כי ייקח זמן מה"
-  l.store "Database migration", "עדכוני בסיס הנתונים"
   l.store "yes", "כן"
   l.store "no", "לא"
-
-  # app/views/admin/settings/write.html.erb
-  l.store "Send trackbacks", "שלח עוקבים-חזרה"
-  l.store "When publishing articles, Publify can send trackbacks to websites that you link to. This should be disabled for private blogs as it will leak non-public information to sites that you're discussing. For public blogs, there's no real point in disabling this.", "בעת פרסום במאמר, Publify יכולה לשלוח עוקבים-חזרה לאתרים אליהם אתה מקשר. מומלץ לבטל זאת לבלוגים פרטיים משום שמידע פרטי על האתרים אליהם אתה מקשר עלול לדלוף. לבלוגים ציבוריים, אין טעם לבטל זאת."
-  l.store "URLs to ping automatically", "כתובות לקישור אוטומטי"
-  l.store "Latitude, Longitude", "קו רוחב, קו אורך"
-  l.store "your latitude and longitude", "קווי הרוחב והאורך שלך"
-  l.store "example", "דוגמא"
-  l.store "Write", "כתוב"
-
-  # app/views/admin/sidebar/_availables.html.erb
   l.store "You have no plugins installed", "אין תוספים מותקנים"
 
   # app/views/admin/sidebar/_publish.html.erb
@@ -247,30 +190,19 @@ Localization.define("he_IL") do |l|
   l.store "Get more plugins", ""
   l.store "Sidebar", "תיבת צד"
   l.store "Publish changes", "פרסם שינויים"
-  l.store "Displays links to monthly archives", ""
   l.store "Livesearch", ""
   l.store "Adds livesearch to your Publify blog", ""
-  l.store "This widget just displays links to Publify main site, this blog's admin and RSS.", ""
   l.store "Adds basic search sidebar in your Publify blog", ""
   l.store "Static", ""
   l.store "Static content, like links to other sites, advertisements, or blog meta-information", ""
-  l.store "Show most popular tags for this blog", ""
   l.store "RSS and Atom feeds", ""
   l.store "XML Syndication", ""
   l.store "remove", "supprimer"
-
-  # app/views/admin/tags/_form.html.erb
   l.store "Display name", "שם התצוגה"
-
-  # app/views/admin/tags/destroy.html.erb
   l.store "Are you sure you want to delete the tag", "האם אתה בטוח שרצונך למחוק תווית זו ?"
   l.store "Delete this tag", "מחק תוויות זו"
-
-  # app/views/admin/tags/edit.html.erb
   l.store "Editing ", "עורך"
   l.store "Back to tags list", "חזרה לרשימת התוויות"
-
-  # app/views/admin/tags/index.html.erb
   l.store "Display Name", "שם תצוגה"
   l.store "Manage tags", "נהל תוויות"
 
@@ -290,35 +222,12 @@ Localization.define("he_IL") do |l|
   l.store "Send notification messages via email", "שלח עדכונים באמצאות הדואל"
   l.store "Send notification messages when new articles are posted", "עדכן בעת כתבות חדשים"
   l.store "Send notification messages when comments are posted", "עדכן בעת תגובות חדשות"
-  l.store "Contact options", ""
-  l.store "Your site", ""
-  l.store "display URL on public profile", ""
-  l.store "Your MSN", ""
-  l.store "display MSN ID on public profile", ""
-  l.store "Your Yahoo ID", ""
-  l.store "display Yahoo! ID on public profile", ""
-  l.store "Your Jabber ID", ""
-  l.store "display Jabber ID on public profile", ""
-  l.store "Your AIM id", ""
-  l.store "display AIM ID on public profile", ""
-  l.store "Your Twitter username", ""
-  l.store "display Twitter on public profile", ""
-  l.store "Tell us more about you", ""
-
-  # app/views/admin/users/destroy.html.erb
   l.store "Really delete user", "האם אתה בטוח שברונך למחוק משתמש זה?"
   l.store "Yes", "כן"
-  l.store "Users", "משתמשים"
-
-  # app/views/admin/users/edit.html.erb
   l.store "Edit User", "ערוך משתמש"
   l.store "Comments", "תגובות"
   l.store "Add User", "הוסף משתמש"
-
   l.store "Posted by", "נכתב על ידי"
-  l.store "Continue reading", ""
-
-  l.store "said", "a dit"
   l.store "This comment has been flagged for moderator approval.  It won't appear on this blog until the author approves it", "תגובה זו הועברה לביקורת. היא לא תופיע בבלוג עד אשר הכותב יאשר אותה"
 
   l.store "Your name", "השם שלך"
@@ -340,22 +249,10 @@ Localization.define("he_IL") do |l|
   l.store "There are", "ישנם"
 
   l.store "Leave a response", "הגב"
-  l.store "Trackbacks", "עוקבים חזרה"
   l.store "Use the following link to trackback from your own site", "השתמש בקישור הבא כדי לעקוב-חזרה מהאתר שלך"
   l.store "RSS feed for this post", "מזין RSS לכתבה זו"
   l.store "trackback uri", "כתובת העוקב-חזרה"
   l.store "Comments are disabled", "התגובות מבוטלות"
-  l.store "Trackbacks are disabled", ""
-
-  # app/views/authors/show.html.erb
-  l.store "Web site:", ""
-  l.store "MSN:", ""
-  l.store "Yahoo:", ""
-  l.store "Jabber:", ""
-  l.store "AIM:", ""
-  l.store "Twitter:", ""
-  l.store "About %s", ""
-
   l.store "This comment has been flagged for moderator approval.", "התגובה הזו ממתינה לאישור"
 
   # app/views/setup/index.html.erb
@@ -409,28 +306,7 @@ Localization.define("he_IL") do |l|
 
   l.store "Meta", "פרטים"
   l.store "permalink", "קישור קבוע"
-
-  # themes/true-blue-3/helpers/theme_helper.rb
-  l.store "You are here: ", ""
-
-  l.store "%%a, %%d %%b %%Y %%H:%%M", ""
-
-  l.store "later:", ""
-
-  l.store "Email address", ""
-  l.store "Your website", ""
-
-  l.store "add me to Twitter", ""
   l.store "Trackbacks for", "עוקבי חזרה עבור"
-
-  l.store "Search results for:", ""
-
-  # themes/true-blue-3/views/categories/index.html.erb
-
-  # themes/true-blue-3/views/categories/show.html.erb
-  l.store "Previous", ""
-
-  # vendor/plugins/archives_sidebar/views/content.rhtml
   l.store "Archives", "ארכיון"
 
   # vendor/plugins/authors_sidebar/views/content.rhtml
