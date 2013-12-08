@@ -47,8 +47,6 @@ Localization.define("nl_NL") do |l|
   # app/controllers/admin/settings_controller.rb
   l.store "Please review and save the settings before continuing", "Controleer de instellingen en sla ze op voor je verder gaat"
   l.store "config updated.", "configuratie bijgewerkt"
-
-  # app/controllers/admin/sidebar_controller.rb
   l.store "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually", "Het lijkt er op dat er iets fout ging. Misschien ontbreken sommige zijbalken en moet je ze opnieuw installeren of handmatig verwijderen"
   l.store "Tag was successfully updated.", "Tag was succesvol bijgewerkt."
 
@@ -189,27 +187,9 @@ Localization.define("nl_NL") do |l|
   l.store "File Uploads", "Bestand Uploads"
   l.store "Thumbnail", "Voorafbeelding"
   l.store "Update settings", "Werk instellingen bij"
-
-  l.store "Enable comments by default", "Commentaren standaard toestaan"
-  l.store "Enable Trackbacks by default", "Trackbacks standaard toestaan"
-  l.store "Enable feedback moderation", "Feedback controle aanzetten"
-  l.store "You can enable site wide feedback moderation. If you do so, no comment or trackback will appear on your blog unless you validate it.", "Je kunt voor de hele site feedback controle aanzetten. Als je dat doet zal geen enkel commentaar of trackback op je blog verschijnen totdat je het goedkeurt"
-  l.store "Comments filter", "Commentaren filter"
   l.store "Enable gravatars", "Enable gravatars"
   l.store "Show your email address", "Toon je e-mail adres"
   l.store "Notifications", "Notificaties"
-  l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "Het aanzetten van spambescherming zorgt dat publify het IP-adres en de inhoud van reacties vergelijkt met lokale en centrale zwarte lijsten. Een goede bescherming tegen spam robots"
-  l.store "Enable spam protection", "Gebruik spam-bescherming"
-  l.store "Akismet Key", "Akismet sleutel"
-  l.store "Publify can (optionally) use the %s spam-filtering service.  You need to register with Akismet and receive an API key before you can use their service.  If you have an Akismet key, enter it here", "Publify kan (optioneel) de %s spam-filter dienst gebruiken. Je moet een registratie bij Akismet hebben en een API sleutel voordat je deze dienst kunt gebruiken. Als je een Akismet sleutel hebt, vul die dan hier in"
-  l.store "Disable trackbacks site-wide", "Gebruik nergens trackbacks"
-  l.store "This setting allows you to disable trackbacks for every article in your blog.  It won't remove existing trackbacks, but it will prevent any further attempt to add a trackback anywhere on your blog.", "Deze instelling zorgt er voor dat bij geen enkel artikel in je blog trackbacks gebruikt kunnen worden. Het zal bestaande trackbacks niet verwijderen, maar het zal voorkomen dat nieuwe trackbacks worden toegevoegd."
-  l.store "Disable comments after", "Sta commentaren niet toe na"
-  l.store "days", "dagen"
-  l.store "Set to 0 to never disable comments", "Zet op 0 om commentaren altijd toe te staan"
-  l.store "Max Links", "Max links"
-  l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Publify zal automatisch commentaren en trackbacks verwijderen die meer dan een bepaald aantal links bevatten"
-  l.store "Set to 0 to never reject comments", "Zet op 0 om commentaren nooit te weigeren"
   l.store "Publishing options", "Publicatie opties"
   l.store "articles on my homepage by default", "artikelen op mijn startpagina"
   l.store "articles in my news feed by default", "artikelen in mijn news feed"
@@ -230,30 +210,9 @@ Localization.define("nl_NL") do |l|
   l.store "yes", "ja"
   l.store "no", "nee"
   l.store "Changes published", "Wijzigingen gepubliceerd"
-
-  # app/views/admin/sidebar/_target.html.erb
   l.store "Drag some plugins here to fill your sidebar", "Sleep wat plugins naar hier om de zijbalk te vullen"
-
-  # app/views/admin/sidebar/index.html.erb
-  l.store "Drag and drop to change the sidebar items displayed on this blog. To remove items from the sidebar just click 'remove'. Changes are saved immediately, but not activated until you click the 'Publish changes' button", "Sleep dingen heen en weer om de zijbalk van dit blog aan te passen. Om dingen te verwijderen klik je op verwijderen  Wijzigen worden automatisch opgeslagen, maar niet geactiveerd totdat je de 'Publiceer' knop klikt"
-  l.store "Available Items", "Beschikbare dingen"
   l.store "You have no plugins installed", "Je hebt geen plugins ge&iuml;installeerd"
-  l.store "Active Sidebar items", "Actieve zijbalk dingen"
   l.store "Get more plugins", "Haal meer thema's op"
-  l.store "Sidebar", "Zijbalk"
-  l.store "Publish changes", "Publiceer wijzigingen"
-  l.store "Displays links to monthly archives", ""
-  l.store "Displays a list of authors ordered by name with links to their articles and profile", ""
-  l.store "Livesearch", ""
-  l.store "Adds livesearch to your Publify blog", ""
-  l.store "This widget just displays links to Publify main site, this blog's admin and RSS.", ""
-  l.store "Adds basic search sidebar in your Publify blog", ""
-  l.store "Static", ""
-  l.store "Static content, like links to other sites, advertisements, or blog meta-information", ""
-  l.store "RSS and Atom feeds", ""
-  l.store "XML Syndication", ""
-  l.store "remove", "supprimer"
-
   l.store "Display name", "Schermnaam"
   l.store "Are you sure you want to delete the tag", "Weet je zeker dat je deze tag wilt verwijderen?"
   l.store "Delete this tag", "Verwijder deze tag"

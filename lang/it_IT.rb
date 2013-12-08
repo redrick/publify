@@ -30,7 +30,6 @@ Localization.define("it_IT") do |l|
   l.store "Please review and save the settings before continuing", ""
   l.store "config updated.", "Configurazione aggiornata."
 
-  # app/controllers/admin/sidebar_controller.rb
   l.store "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually", ""
   l.store "Store", "Salva"
   l.store "All categories", "Tutte le categorie"
@@ -108,62 +107,19 @@ Localization.define("it_IT") do |l|
   l.store "Are you sure you want to delete this file", "Sei sicuro di voler eliminare questo file"
   l.store "Delete this file from the webserver?", "Eliminare questo file dal webserver ?"
   l.store "File Uploads", "Invia file"
-  l.store "Enable comments by default", "Abilita commenti di defaault"
-  l.store "Enable Trackbacks by default", "Abilita Trackbacks come default"
-  l.store "Enable feedback moderation", "Abilita la moderazione dei feedback"
-  l.store "You can enable site wide feedback moderation. If you do so, no comment or trackback will appear on your blog unless you validate it.", "Puoi abilitare in modo globale la moderazione dei feedback. Se fai cio', nessun commento o trackback apparira' sul tuo blog se tu non lo autorizzi."
-  l.store "Comments filter", "Filtra commenti"
   l.store "Enable gravatars", "Abilita gravatars"
   l.store "Show your email address", "Mostra il tuo indirizzo mail"
-  l.store "Notifications", ""
-  l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "Abilitando la protezione contro lo spam fa si che il blog compari gli IP di chi invia i commenti e anche il loro contenuto con una blacklist remota. E' una buona difesa contro gli spam robot"
-  l.store "Enable spam protection", "Abilita la protezione spam"
-  l.store "Akismet Key", "Chiave Akismet"
-  l.store "Disable trackbacks site-wide", ""
-  l.store "This setting allows you to disable trackbacks for every article in your blog.  It won't remove existing trackbacks, but it will prevent any further attempt to add a trackback anywhere on your blog.", ""
-  l.store "Disable comments after", "Disabilita commenti dopo "
-  l.store "days", "giorni"
-  l.store "Set to 0 to never disable comments", "Usa 0 per non disabilitare mai i commenti"
-  l.store "Max Links", "Max Links"
-  l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Il blog cancellera' automaticamente commenti e trackbacks che contengono un certo numero di link"
-  l.store "Set to 0 to never reject comments", "Inserisci 0 per accettare sempre i commenti."
-
-  # app/views/admin/settings/index.html.erb
-  l.store "Publishing options", ""
   l.store "articles on my homepage by default", "articoli nella homepage"
   l.store "articles in my news feed by default", "articoli nei miei rss feed"
   l.store "Show full article on feed", "Visualizza articolo completo su feed"
-  l.store "Feedburner ID", ""
-
-  # app/views/admin/settings/seo.html.erb
   l.store "Search Engine Optimisation", "Ottimizzazione motori di ricerca"
   l.store "New database version", "Nuova versione del database"
   l.store "Your database supports migrations", "Il tuo database supporta le migrazioni"
   l.store "yes", "si"
   l.store "no", "no"
   l.store "You have no plugins installed", "Non hai plugins installati"
-
-  # app/views/admin/sidebar/_publish.html.erb
   l.store "Changes published", "Modifiche pubblicate"
-
-  # app/views/admin/sidebar/_target.html.erb
   l.store "Drag some plugins here to fill your sidebar", "Trascina alcuni plugins qui per popolare la tua sidebar"
-
-  # app/views/admin/sidebar/index.html.erb
-  l.store "Drag and drop to change the sidebar items displayed on this blog. To remove items from the sidebar just click 'remove'. Changes are saved immediately, but not activated until you click the 'Publish changes' button", "Trascina e rilascia per cambiare gli elementi visualizzati nella sidebar del tuo blog. Per rimuorverli clicca su annulla Cambiamenti perche' comunque non sono salvati automaticamente ma devi cliccare il bottone 'Pubblica'"
-  l.store "Available Items", "Elementi disponibili"
-  l.store "Active Sidebar items", "Attiva elementi Sidebar"
-  l.store "Get more plugins", ""
-  l.store "Sidebar", ""
-  l.store "Publish changes", "Pubblica cambiamenti"
-  l.store "Livesearch", ""
-  l.store "Adds livesearch to your Publify blog", ""
-  l.store "Adds basic search sidebar in your Publify blog", ""
-  l.store "Static", ""
-  l.store "Static content, like links to other sites, advertisements, or blog meta-information", ""
-  l.store "RSS and Atom feeds", ""
-  l.store "XML Syndication", ""
-  l.store "remove", "supprimer"
   l.store "Display name", "Nome visualizzato"
   l.store "Active theme", "Tema Attivo"
   l.store "Choose a theme", "Seleziona un tema"

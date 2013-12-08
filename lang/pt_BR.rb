@@ -51,8 +51,6 @@ Localization.define("pt_BR") do |l|
   # app/controllers/admin/settings_controller.rb
   l.store "Please review and save the settings before continuing", "Por favor, reveja e salve as configurações antes de continuar"
   l.store "config updated.", "Config atualizada."
-
-  # app/controllers/admin/sidebar_controller.rb
   l.store "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually", "Parece que algo deu errado. Talvez esteja faltando alguma sidebar e você precise reinstalar ou remove-las manualmente"
 
   # app/controllers/admin/tags_controller.rb
@@ -144,44 +142,18 @@ Localization.define("pt_BR") do |l|
   # app/views/admin/content/destroy.html.erb
   l.store "Are you sure you want to delete this article", "&iquest;Est&aacute;s seguro que deseas borrar este art&iacute;culo?"
   l.store "Delete this article", "Eliminar este art&iacute;culo"
-
-
-  # app/views/admin/dashboard/_comments.html.erb
-  l.store "For security reasons, you should restart your Publify application. Enjoy your blogging experience.", ""
-  l.store "Latest Comments", ""
-  l.store "By %s on %s", ""
-
-  # app/views/admin/dashboard/_posts.html.erb
-  l.store "Latest Posts", ""
   l.store "Limit to spam", "Limitar a spam"
   l.store "Are you sure you want to delete the page", "&iquest;Est&aacute;s seguro que deseas eliminar esta p&aacute;gina?"
   l.store "Delete this page", "Eliminar esta p&aacute;gina"
-
-  # app/views/admin/profiles/index.html.erb
   l.store "Your profile", ""
   l.store "Previous page", "P&aacute;gina anterior"
   l.store "Next page", "P&aacute;gina siguiente"
   l.store "Are you sure you want to delete this file", "&iquest;Est&aacute;s seguro que deseas eliminar este archivo?"
   l.store "Delete this file from the webserver?", "&iquest;Eliminar este archivo del servidor?"
   l.store "File Uploads", "Archivos subidos"
-  l.store "Enable comments by default", "Habilitar comentarios por default"
-  l.store "Enable Trackbacks by default", "Habilitar Trackbacks por default"
-  l.store "Enable feedback moderation", "Habilitar moderaci&oacute;n de comentarios y trackbacks"
-  l.store "Comments filter", "Filtro de comentarios"
   l.store "Enable gravatars", "Habilitar gravatars"
   l.store "Show your email address", "Mostrar tu direcci&oacute;n de email"
-  l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "Habilitando la protecci&oacute;n anti-spam har&aacute; que publify compare la direcci&oacute;n IP del usuario as&iacute; como el contenido de sus comentarios contra una lista negra remota o local. Es una buena defensa contra los robots de spam"
-  l.store "Enable spam protection", "Habilitar protecci&oacute;n anti-spam"
-  l.store "Akismet Key", "Clave de Akismet (API key)"
-  l.store "Publify can (optionally) use the %s spam-filtering service.  You need to register with Akismet and receive an API key before you can use their service.  If you have an Akismet key, enter it here", "Publify puede (opcionalmente) usar el servicio anti-spam de %s. Necesitas registrarte en Akismet y obtener una API key antes de poder usar su servicio. Si tienes una clave de Akismet, introd&uacute;cela aqu&iacute;"
-  l.store "Disable trackbacks site-wide", ""
   l.store "This setting allows you to disable trackbacks for every article in your blog.  It won't remove existing trackbacks, but it will prevent any further attempt to add a trackback anywhere on your blog.", "Esta opci&oacute;n te permite deshabilitar trackbacks para cada art&iacute;culo en tu blog. Esto no remover&aacute; trackbacks existentes, pero impedir&aacute; cualquier intento futuro para a&ntilde;adir una trackback en cualquier parte de tu blog."
-  l.store "Disable comments after", "Deshabilitar comentarios despu&eacute;s de"
-  l.store "days", "d&iacute;as"
-  l.store "Set to 0 to never disable comments", "Introducir 0 para nunca deshabilitar comentarios"
-  l.store "Max Links", "M&aacute;ximo n&uacute;mero de links"
-  l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Publify rechazar&aacute; autom&aacute;ticamente los comentarios y trackbacks que contengan m&aacute;s de un cierto n&uacute;mero de links en ellos"
-  l.store "Set to 0 to never reject comments", "Introducir 0 para nunca rechazar comentarios"
   l.store "articles on my homepage by default", "art&iacute;culos en mi p&aacute;gina de inicio por default"
   l.store "articles in my news feed by default", "art&iacute;culos en mi feed RSS"
   l.store "Show full article on feed", "Mostrar art&iacute;culo completo en el feed"
@@ -190,32 +162,8 @@ Localization.define("pt_BR") do |l|
   l.store "yes", "s&iacute;"
   l.store "no", "no"
   l.store "You have no plugins installed", "No tienes plugins instalados"
-
-  # app/views/admin/sidebar/_publish.html.erb
   l.store "Changes published", "Cambios publicados"
-
-  # app/views/admin/sidebar/_target.html.erb
   l.store "Drag some plugins here to fill your sidebar", "Arrastra algunos plugins aqu&iacute; para llenar tu barra lateral"
-
-  # app/views/admin/sidebar/index.html.erb
-  l.store "Available Items", "Items disponibles"
-  l.store "Active Sidebar items", "Items activos de la barra lateral"
-  l.store "Get more plugins", ""
-  l.store "Sidebar", ""
-  l.store "Publish changes", "Publicar cambios"
-  l.store "Displays links to monthly archives", ""
-  l.store "Displays a list of authors ordered by name with links to their articles and profile", ""
-  l.store "Livesearch", ""
-  l.store "Adds livesearch to your Publify blog", ""
-  l.store "This widget just displays links to Publify main site, this blog's admin and RSS.", ""
-  l.store "Show pages for this blog", ""
-  l.store "Adds basic search sidebar in your Publify blog", ""
-  l.store "Static", ""
-  l.store "Static content, like links to other sites, advertisements, or blog meta-information", ""
-  l.store "RSS and Atom feeds", ""
-  l.store "XML Syndication", ""
-  l.store "remove", "supprimer"
-
   l.store "Display name", "Nombre para mostrar"
   l.store "Active theme", "Tema activo"
   l.store "Choose a theme", "Escoge un tema"
@@ -387,7 +335,6 @@ Localization.define("pt_BR") do |l|
   l.store "Show this pattern", "Mostrar este patr&oacute;n"
   l.store "Show this user", "Mostrar este usuario"
   l.store "Spam Protection", "Protecci&oacute;n anti-spam"
-  l.store "Spam protection", "Protecci&oacute;n anti-spam"
   l.store "String", "Cadena"
   l.store "Subtitle", "Subt&iacute;tulo"
   l.store "Summary", "Resumen"

@@ -83,7 +83,6 @@ Localization.define("nb_NO") do |l|
   # app/controllers/admin/settings_controller.rb
   l.store "Please review and save the settings before continuing", "Vennligst les igjennom og lagre innstillingene før du fortsetter"
 
-  # app/controllers/admin/sidebar_controller.rb
   l.store "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually", "Noe gikk galt. Kanskje en av dine sidekolonner mangler og du burde reinstallere den eller fjerne den manuelt"
 
   # app/controllers/admin/tags_controller.rb
@@ -226,61 +225,19 @@ Localization.define("nb_NO") do |l|
   l.store "Original size", "Opprinnelig størrelse"
   l.store "You robots.txt file is not writeable. Publify won't be able to write it", "Din robots.txt er ikke skrivbar. Publify vil ikke kunne skrive til den"
   l.store "Titles", "Titler"
-
-  l.store "Enable comments by default", "Aktiver kommentarer som standard"
-  l.store "Enable Trackbacks by default", "Aktiver Trackbacks som standard"
-  l.store "Enable feedback moderation", "Aktiver feedback-moderering"
-  l.store "You can enable site wide feedback moderation. If you do so, no comment or trackback will appear on your blog unless you validate it.", "Du kan aktivere feedback-moderering for hele siden. Dersom du gjør det vil ingen kommentarer eller trackbacks vises på bloggen din uten at du har godkjent dem"
-  l.store "Comments filter", "Kommentarfilter"
-  l.store "Avatars provider", "Avatartilbyder"
   l.store "Show your email address", "Vis din epostadresse"
-  l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "Enabling spam protection will make publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots"
-  l.store "Enable spam protection", "Aktiver Spam-beskyttelse"
-  l.store "Akismet Key", "Akismet-nøkkel"
-  l.store "Publify can (optionally) use the %s spam-filtering service.  You need to register with Akismet and receive an API key before you can use their service.  If you have an Akismet key, enter it here", "Publify can (optionally) use the %s spam-filtering service.  You need to register with Akismet and receive an API key before you can use their service.  If you have an Akismet key, enter it here"
-  l.store "Disable trackbacks site-wide", "Deaktiver Trackbacks på hele siden"
-  l.store "This setting allows you to disable trackbacks for every article in your blog.  It won't remove existing trackbacks, but it will prevent any further attempt to add a trackback anywhere on your blog.", "Denne innstillingen gir deg mulighet for å daktivere Trackbacks for hver artikkel i bloggen din. Eksisterende Trackbacks vil ikke fjernes, men det vil forhindre nye forsøk på å legge til Trackbacks over hele bloggen din."
-  l.store "Disable comments after", "Deaktiver kommentarer etter"
-  l.store "days", "dager"
-  l.store "Set to 0 to never disable comments", "Sett til 0 for å aldri deaktivere kommentarer"
-  l.store "Max Links", "Maks antall lenker"
-  l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them"
-  l.store "Set to 0 to never reject comments", "Sett til 0 for å aldri forkaste kommentarer"
-  l.store "Enable reCaptcha", "Aktiver reCaptcha"
-  l.store "Remember to set your reCaptcha keys inside config/initializers/recaptcha.rb", "Husk å sette reCaptcha-nøklene dine i filen config/initializers/recaptcha.rb"
-  l.store "Feedback settings", "Feedback-innstillinger"
-
-  # app/views/admin/settings/index.html.erb
-  l.store "Date format", "Datoformat"
-  l.store "ago", "siden"
-  l.store "Time format", "Klokkeformat"
-  l.store "Publishing options", "Publiseringsvalg"
-  l.store "articles on my homepage by default", "artikler på min hjemmeside som standard"
   l.store "articles in my news feed by default", "artikler i min nyhetsfeed som standard"
-  l.store "Show only article excerpt on feed", "Vis bare artikkelens utdrag i feed"
-  l.store "Feedburner ID", "Feedburner ID"
   l.store "You can use your Google Feedburner account instead of Publify feed URL. To enable this, fill this form with your Feedburner ID.", "Du kan bruke din Gooogle Feedburner-konto istedet for Publify feed URL. For å aktivere dette, fyll ut dette skjemaet med din Feedburner ID."
-
-  # app/views/admin/settings/update_database.html.erb
   l.store "New database version", "Ny databaseversjon"
   l.store "Your database supports migrations", "Din database støtter migrations"
   l.store "yes", "ja"
   l.store "no", "nei"
   l.store "Changes published", "Endringer publisert"
 
-  # app/views/admin/sidebar/_target.html.erb
   l.store "Drag some plugins here to fill your sidebar", "Dra og slipp plugins hit for å populere sidebar"
 
-  # app/views/admin/sidebar/index.html.erb
-  l.store "Drag and drop to change the sidebar items displayed on this blog. To remove items from the sidebar just click 'remove'. Changes are saved immediately, but not activated until you click the 'Publish changes' button", "Dra og slipp for at Dra og slipp innholdsendreen der vises på denne blog. Du kan fjerne elementer fra oversiktsoversikten bare ved at klikke fjern. endringer gemmes med det samme, men ikke aktiveret, før du klikker på 'Offentliggør' knappen."
-  l.store "Available Items", "Tilgjengelige enheter"
   l.store "You have no plugins installed", "Du har ikke installert noen plugins"
-  l.store "Active Sidebar items", "Aktive sidebar-enheter"
   l.store "Get more plugins", "Hent flere plugins"
-  l.store "Sidebar", ""
-  l.store "Publish changes", "Publiser endringer"
-  l.store "remove", "supprimer"
-
   l.store "Are you sure you want to delete the tag", "Er du sikker på at du vil slette denne taggen"
   l.store "Delete this tag", "Slett denne taggen"
 
@@ -323,23 +280,16 @@ Localization.define("nb_NO") do |l|
   l.store "Your Twitter username", "Ditt Twitter-brukernavn"
   l.store "display Twitter on public profile", "Vis Twitter på din profil"
   l.store "Tell us more about you", "Fortell litt mer om deg selv"
-
-  # app/views/admin/users/destroy.html.erb
   l.store "Really delete user", "Vil du virkelig slette brukeren"
   l.store "Yes", "Ja"
   l.store "Edit User", "Rediger bruker"
   l.store "New User", "Ny bruker"
-  l.store "Comments", "Kommentarer"
   l.store "State", "Tilstand"
   l.store "%s user", "%s bruker"
-
-  # app/views/admin/users/new.html.erb
   l.store "Add User", "Legg til bruker"
   l.store "Posted by", "Skrevet av"
   l.store "Continue reading", "Fortsett å lese"
-
   l.store "Oops, something wrong happened, the comment could not be saved", "Ojsann, noe galt skjedde. Kommentaren ble ikke lagret"
-
   l.store "Your name", "Ditt navn"
   l.store "Your email", "Din epost"
   l.store "Your message", "Din beskjed"
@@ -426,19 +376,9 @@ Localization.define("nb_NO") do |l|
   l.store "Search results for:", "Søkeresultater for:"
   l.store "Read all articles in %s", "Les alle artikler i %s"
   l.store "Previous", "Forrige"
-
-  # vendor/plugins/archives_sidebar/app/views/archives_sidebar/_content.html.erb
   l.store "Archives", "Arkiv"
-
-  # vendor/plugins/authors_sidebar/app/views/authors_sidebar/_content.html.erb
   l.store "Authors", "Forfattere"
-
-  # vendor/plugins/meta_sidebar/app/views/meta_sidebar/_content.html.erb
-  l.store "RSS Feed", ""
-  l.store "Admin", ""
   l.store "Powered by Publify", "Bloggen bruker Publify"
-
-  # vendor/plugins/xml_sidebar/app/views/xml_sidebar/_content.html.erb
   l.store "Syndicate", "Syndikat"
   l.store "Category %s", "Kategori %s"
   l.store "Tag %s", ""
@@ -638,7 +578,6 @@ Localization.define("nb_NO") do |l|
   l.store "XML Syndication", "XML Syndikat"
   l.store "You are now logged out of the system", "Du er nu logget af systemet"
   l.store "You can add it to the following categories", "Du kan tilføje følgende kategorier"
-  l.store "You can enable site wide feedback moderation. If you do so, no comment or trackback will appear on your blog unless you validate it", "Du kan slå feedback moderation til for hele bloggen. Hvis du gør dette kommer kommentarer og trackbacks først frem når du har godkendt dem"
   l.store "You can optionally disable non-Ajax comments. Publify will always use Ajax for comment submission if Javascript is enabled, so non-Ajax comments are either from spammers or users without Javascript.", "Du kan valgfritt deaktivere non-AJAX-kommentarer. Publify vil alltid bruke AJAX for kommentarinnsending dersom Javascript er aktivert, slik at non-AJAX-kommentarer enten kommer fra brukere uten Javascript eller fra spammere.."
   l.store "You need a permalink format with an identifier : %%month%%, %%year%%, %%day%%, %%title%%", "Du må ha et permalenkeformat med en identifikator : %%month%%, %%year%%, %%day%%, %%title%%"
   l.store "Your posts : %d", "Dine artikler : %d"

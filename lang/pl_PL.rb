@@ -100,25 +100,8 @@ Localization.define("pl_PL") do |l|
   l.store "Are you sure you want to delete this file", "Czy na pewno chcesz skasować ten plik"
   l.store "Delete this file from the webserver?", "Skasować ten plik z serwera?"
   l.store "File Uploads", "Wysłane pliki"
-  l.store "Enable comments by default", "Komentarze domyślnie włączone"
-  l.store "Enable Trackbacks by default", "Trackbacki domyślnie włączone"
-  l.store "Enable feedback moderation", "Włącz moderację komentarzy"
-  l.store "You can enable site wide feedback moderation. If you do so, no comment or trackback will appear on your blog unless you validate it.", "Możesz włączyć globalną moderację komentarzy. W takim przypadku żaden komentarz nie ukaże się na blogu aż do momentu jego akceptacji."
-  l.store "Comments filter", "Filtr komentarzy"
   l.store "Enable gravatars", "Włącz gravatary"
   l.store "Show your email address", "Pokaż swój adres email"
-  l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "Włączenie ochrony przed spamem sprawi, iż Publify będzie porównywać adresy IP nadawców oraz treść ich postów z lokalnymi i zdalnymi czarnymi listami. To dobra obrona przed spam botami."
-  l.store "Enable spam protection", "Włącz ochronę przed spamem"
-  l.store "Akismet Key", "Klucz Akismet"
-  l.store "Publify can (optionally) use the %s spam-filtering service.  You need to register with Akismet and receive an API key before you can use their service.  If you have an Akismet key, enter it here", "Publify może (opcjonalnie) stosować usługę %s do filtrowania spamu. Musisz zarejestrować się w serwisie Akismet by otrzymać klucz API nim będzie można używać tej usługi. Jeśli posiadasz klucz API Akismet, wprowadź go tutaj"
-  l.store "Disable trackbacks site-wide", ""
-  l.store "This setting allows you to disable trackbacks for every article in your blog.  It won't remove existing trackbacks, but it will prevent any further attempt to add a trackback anywhere on your blog.", "Ta opcja pozwala na wyłączenie trackbacków we wszystkich artykułach. Nie usunie jednak istniejących trackbacków, a jedynie zabroni dodawania nowych."
-  l.store "Disable comments after", "Wyłącz komentarze po "
-  l.store "days", "dni"
-  l.store "Set to 0 to never disable comments", "Ustaw 0 by komentarze były zawsze włączone"
-  l.store "Max Links", "Max. liczba łączy"
-  l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Publify automatycznie odrzuca komentarze i trackbacki, które zawierają większą, niż podana, liczbę łączy"
-  l.store "Set to 0 to never reject comments", "Ustaw 0 by komentarze były zawsze akceptowane"
 
   # app/views/admin/settings/index.html.erb
   l.store "articles on my homepage by default", "domyślnie artykułów na stronie głównej"
@@ -135,27 +118,7 @@ Localization.define("pl_PL") do |l|
   l.store "no", "nie"
   l.store "You have no plugins installed", "Brak zainstalowanych wtyczek"
   l.store "Changes published", "Opublikowane zmiany"
-
-  # app/views/admin/sidebar/_target.html.erb
   l.store "Drag some plugins here to fill your sidebar", "Przeciągnij i upuść wtyczki na pasek boczny"
-
-  # app/views/admin/sidebar/index.html.erb
-  l.store "Drag and drop to change the sidebar items displayed on this blog. To remove items from the sidebar just click 'remove'. Changes are saved immediately, but not activated until you click the 'Publish changes' button", "Przeciągnij i upuść pozycje, które mają być wyświetlone na blogu. By usunąć pozycję naciśnij *Usuń*. Zmiany są zapisywane od razu, lecz nie są aktywne do momentu kliknięcia 'Publikuj zmiany'"
-  l.store "Available Items", "Dostępne elementy"
-  l.store "Active Sidebar items", "Aktywne elementy paska"
-  l.store "Get more plugins", ""
-  l.store "Sidebar", ""
-  l.store "Publish changes", "Publikuj zmiany"
-  l.store "Displays links to monthly archives", ""
-  l.store "Livesearch", ""
-  l.store "Adds livesearch to your Publify blog", ""
-  l.store "This widget just displays links to Publify main site, this blog's admin and RSS.", ""
-  l.store "Adds basic search sidebar in your Publify blog", ""
-  l.store "Static", ""
-  l.store "Static content, like links to other sites, advertisements, or blog meta-information", ""
-  l.store "RSS and Atom feeds", ""
-  l.store "XML Syndication", ""
-  l.store "remove", "supprimer"
   l.store "Display name", "Wyświetlana nazwa"
   l.store "Active theme", "Temat aktywny"
   l.store "Send notification messages via email", "Wysyłaj powiadomienia emailem"
@@ -189,14 +152,7 @@ Localization.define("pl_PL") do |l|
   l.store "Comments are disabled", "Komentarze wyłączone"
   l.store "Trackbacks for", "Trackbacki do"
   l.store "Previous", "Poprzednie"
-
-  # vendor/plugins/archives_sidebar/views/content.rhtml
   l.store "Archives", "Archiwa"
-
-  # vendor/plugins/authors_sidebar/views/content.rhtml
-  l.store "Authors", ""
-
-  # vendor/plugins/xml_sidebar/views/content.rhtml
   l.store "Syndicate", "Subskrypcje"
   l.store "%d categories", "%d kategorie"
   l.store "%d tags", "%d tagi"

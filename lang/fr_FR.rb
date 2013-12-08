@@ -161,54 +161,8 @@ Localization.define("fr_FR") do |l|
 
   l.store "Previous page", "Page précédente"
   l.store "Next page", "Page suivante"
-
-  # app/views/admin/resources/destroy.html.erb
-  l.store "Thumbnail", "Miniatures"
-  l.store "Medium size", "Taille moyenne"
-  l.store "Original size", "Fichier original"
-  l.store "Files", "Fichiers"
-  l.store "Browse", "Parcourir"
-  l.store "SEO", "Référencement"
-  l.store "Global SEO settings", "Options générales"
-  l.store "Titles", "Titre des pages"
-  l.store "You robots.txt file is not writeable. Publify won't be able to write it", "Publify ne peut pas écrire dans votre fichier robots.txt."
-
-  # app/views/admin/settings/errors.html.erb
-  l.store "Error 404", "Erreur 404 (le document demandé n'existe pas)"
-  l.store "Message", "Message"
-  l.store "Error messages", "Messages d'erreur"
-
-  l.store "Spam protection", "Protection contre le spam"
-  l.store "Enable comments by default", "Activer les commentaires par défaut"
-  l.store "Enable Trackbacks by default", "Activer les rétroliens par défaut"
-  l.store "Enable feedback moderation", "Activer la modération des commentaires"
-  l.store "You can enable site wide feedback moderation. If you do so, no comment or trackback will appear on your blog unless you validate it.", "Vous pouvez activez la modération des commentaires sur l'ensemble de votre site. Si vous le faites, aucun commentaire ou rétrolien ne sera publié sans une validation de votre part"
-  l.store "Comments filter", "Mise en forme des commentaires"
-  l.store "Avatars provider", "Fournisseur d’avatars"
   l.store "Show your email address", "Afficher votre adresse courriel"
-  l.store "Enable spam protection", "Activer la protection contre le spam"
-  l.store "Enabling spam protection will make Publify compare the IP address of posters as well as the contents of their posts against local and remote blacklists. Good defense against spam bots", "La protection contre le spam permettra à publify de comparer l'adresse IP des commentateurs ainsi que le contenu de leurs commentaires avec une liste noire distante"
-  l.store "Akismet Key", "Clé Akismet"
-  l.store "Publify can (optionally) use the %s spam-filtering service.  You need to register with Akismet and receive an API key before you can use their service.  If you have an Akismet key, enter it here", "Publify peut utiliser le service de lutte contre le spam %s. Vous devez vous enregistrer afin de pouvoir utiliser les services d'Akismet. Si vous possédez une clé Akismet, ajoutez là ici"
-  l.store "Disable trackbacks site-wide", "Désactiver les trackbacks"
-  l.store "This setting allows you to disable trackbacks for every article in your blog.  It won't remove existing trackbacks, but it will prevent any further attempt to add a trackback anywhere on your blog.", "Cette option vous permet de désactiver totalement les rétroliens sur votre blog. Ceci ne supprimera pas les rétroliens existants, mais empêchera tout nouveau rétrolien d'être créé"
-  l.store "Disable comments after", "Désactiver les commentaires au bout de "
-  l.store "days", "jours"
-  l.store "Set to 0 to never disable comments", "Mettez cette option à 0 pour ne jamais désactiver les commentaires dans le temps"
-  l.store "Max Links", "Nombre de liens maximum"
-  l.store "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them", "Publify rejettera automatiquement les commentaires et les rétroliens contenant un certain nombre de liens"
-  l.store "Set to 0 to never reject comments", "Mettez cette option à 0 pour ne jamais rejeter les commentaires"
-  l.store "Enable reCaptcha", "Utiliser reCaptcha"
-  l.store "Remember to set your reCaptcha keys inside config/initializers/recaptcha.rb", "N'oubliez pas de mettre votre clé d'activation dans config/initializers/recaptcha.rb"
-  l.store "Feedback settings", "Paramètres des commentaires"
-  l.store "Date format", "Afficher les dates"
-  l.store "ago", "il y a"
-  l.store "Time format", "Afficher les heures"
-  l.store "Publishing options", "Options de publication"
-  l.store "articles on my homepage by default", "billet sur ma page d'accueil params par défaut"
   l.store "articles in my news feed by default", "billets dans mon flux RSS par défaut"
-  l.store "Show only article excerpt on feed", "Tronquer les articles dans le flux RSS"
-  l.store "Feedburner ID", "Identifiant Feedburner"
   l.store "You can use your Google Feedburner account instead of Publify feed URL. To enable this, fill this form with your Feedburner ID.", "Vous pouvez utiliser votre compte Google Feedburner plutôt que votre adresse de flux Publify. Pour l'autoriser, remplissez ce formulaire avec votre identifiant Feedburner."
   l.store "New database version", "Nouvelle version de la base"
   l.store "Your database supports migrations", "Votre base de données supporte la mise à jour"
@@ -217,20 +171,9 @@ Localization.define("fr_FR") do |l|
 
   # app/views/admin/shared/destroy.html.erb
   l.store "Changes published", "Modifications publiées"
-
-  # app/views/admin/sidebar/_target.html.erb
   l.store "Drag some plugins here to fill your sidebar", "Déplacez des plugins dans cet espace afin de remplir votre sidebar"
-
-  # app/views/admin/sidebar/index.html.erb
-  l.store "Drag and drop to change the sidebar items displayed on this blog. To remove items from the sidebar just click 'remove'. Changes are saved immediately, but not activated until you click the 'Publish changes' button", "Glissez / déplacez des éléments pour changer la sidebar de votre blog. Pour supprimer un élément de votre sidebar, cliquez simplement sur 'supprimer'. Les changements sont effectués immédiatement, mais ne seront pas actifs tant que vous n'aurez pas cliqué sur le bouton 'Publier'."
-  l.store "Available Items", "Éléments disponibles"
   l.store "You have no plugins installed", "Aucun plugin n'est disponible"
-  l.store "Active Sidebar items", "Éléments utilisés"
   l.store "Get more plugins", "Télécharger d'autres plugins"
-  l.store "You can download and install sidebar plugins from our official %s. All you have to do is upload the theme directory in your vendor/plugins directory.", ""
-  l.store "plugin repository", "catalogue de greffons"
-  l.store "Sidebar", "Plugins"
-  l.store "Publish changes", "Publier les modifications"
   l.store "Adds sidebar links to any Amazon.com books linked in the body of the page", "Ajoute des liens vers les articles amazon liés dans l'article ou la page"
   l.store "Displays links to monthly archives", "Affiche des liens vers les archives mensuelles"
   l.store "Displays a list of authors ordered by name with links to their articles and profile", "Affiche la liste des auteurs par ordre alphabétique avec un lien vers leur profil"
@@ -247,11 +190,6 @@ Localization.define("fr_FR") do |l|
   l.store "XML Syndication", "Syndication XML"
   l.store "remove", "supprimer"
   l.store "Customize sidebar", "Modifiez les plugins"
-
-  # app/views/admin/tags/edit.html.erb
-  l.store "Editing tag ", ""
-
-  # app/views/admin/tags/index.html.erb
   l.store "Display Name", "Nom affiché"
   l.store "Manage tags", "Labels"
 
@@ -299,7 +237,6 @@ Localization.define("fr_FR") do |l|
 
   # app/views/admin/users/index.html.erb
   l.store "New User", "Nouvel utilisateur"
-  l.store "Comments", "Commentaires"
   l.store "State", "État"
   l.store "%s user", "%s"
   l.store "Manage users", "Gérer les utilisateurs"
@@ -307,9 +244,7 @@ Localization.define("fr_FR") do |l|
   # app/views/admin/users/new.html.erb
   l.store "Add User", "Ajouter un utilisateur"
   l.store "Posted by", "Publié par"
-  # app/view/admin/
   l.store "All notes", "Toutes les notes"
-  l.store "Statuses", "Notes"
   l.store "Continue reading", "Lire plus"
   l.store "Oops, something wrong happened, the comment could not be saved", "Oops, quelque chose s'est mal déroulé. Votre commentaire n'a donc pu être enregistré."
   l.store "Your name", "Votre nom "
