@@ -1,6 +1,0 @@
-# Storage provider: Local, AWS
-provider: AWS
-engine: AWS
-aws_access_key_id: "AKIAI6MXIH3JXWGKA4RA"
-aws_secret_access_key: "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"
-aws_bucket: "publify-blog"
