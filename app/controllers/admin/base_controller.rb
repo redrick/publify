@@ -2,6 +2,7 @@ class Admin::BaseController < ApplicationController
   cattr_accessor :look_for_migrations
   @@look_for_migrations = true
   layout 'administration'
+
   before_filter :login_required, :except => [ :login, :signup ]
   before_filter :look_for_needed_db_updates, :except => [:login, :signup, :update_database, :migrate]
   before_filter :check_and_generate_secret_token, :except => [:login, :signup, :update_database, :migrate]
@@ -16,19 +17,19 @@ class Admin::BaseController < ApplicationController
     end
   end
 
-  def update_settings_with!(params)
+  def update_settings_with!(settings_param)
     Blog.transaction do
-      params[:setting].each { |k,v| this_blog.send("#{k.to_s}=", v) }
+      settings_param.each { |k,v| this_blog.send("#{k.to_s}=", v) }
       this_blog.save
-      flash[:notice] = _('config updated.')
+      gflash :success
     end
   end
 
   def save_a(object, title)
     if object.save
-      flash[:notice] = _("#{title.capitalize} was successfully saved.")
+      gflash notice: I18n.t("admin.base.successfully_saved", element: title)
     else
-      flash[:error] = _("#{title.capitalize} could not be saved.")
+      gflash error: I18n.t("admin.base.unsuccessfully_saved", element: title)
     end
     redirect_to action: 'index'
   end
@@ -36,12 +37,12 @@ class Admin::BaseController < ApplicationController
   def destroy_a(klass_to_destroy)
     @record = klass_to_destroy.find(params[:id])
     if @record.respond_to?(:access_by?) && !@record.access_by?(current_user)
-      flash[:error] = _("Error, you are not allowed to perform this action")
+      gflash error: I18n.t("admin.base.not_allowed")
       return(redirect_to action: 'index')
     end
     return render('admin/shared/destroy') unless request.post?
     @record.destroy
-    flash[:notice] = _("This #{controller_name.humanize} was deleted successfully")
+    gflash notice: I18n.t("admin.base.successfully_deleted", name: controller_name.humanize)
     redirect_to action: 'index'
   end
 
@@ -60,9 +61,10 @@ class Admin::BaseController < ApplicationController
 
     begin
       checker.generate_token
-      flash[:error] = _("For security reasons, you should restart your Publify application. Enjoy your blogging experience.")
+      gflash notice: I18n.t('admin.base.restart_application')
     rescue
-      flash[:error] = _("Error: can't generate secret token. Security is at risk. Please, change %s content", checker.file)
+      gflash error: I18n.t('admin.base.cant_genereate_secret', checker_file: checker.file)
     end
   end
+
 end

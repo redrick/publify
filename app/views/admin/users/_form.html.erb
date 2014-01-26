@@ -30,15 +30,16 @@
   <div class='control-group'>
     <label class='control-label' for="user_profile"><%= t('.profile')%></label>
     <div class='controls'>
-      <%=  select("user", "profile_id", @profiles.collect {|p| [ _(p.nicename), p.id ] }, { :include_blank => false }) %>
+      <%= select("user", "profile_id", @profiles.collect {|p| [t("profile.#{p.label}"), p.id ] }, { include_blank: false }) %>
     </div>
   </div>
   <div class='control-group'>
     <label class='control-label' for="user_state"><%= t('.user_status')%></label>
     <div class='controls'>
       <select name="user[state]">
-        <option value="active" <%= 'selected' if @user.state == 'active' %>><%= t('.active')%></option>
-        <option value="inactive" <%= 'selected' if @user.state == 'inactive'%>><%= t('.inactive')%></option>
+        <%- User::STATUS.each do |state| %>
+          <option value="<%= state %>" <%= 'selected' if @user.state == state %>><%= t("user.status.#{state}")%></option>
+      <%- end %>
       </select>
     </div>
   </div>
@@ -124,7 +125,11 @@
 
 <fieldset class='form-horizontal'>
   <legend><%= t('.twitter')%></legend>
-  <%= twitter_disabled_message(this_blog, current_user) %>
+  <%- unless twitter_available?(this_blog, current_user) %>
+    <p class='alert alert-warning'>
+  <%= t(".how_to_setup_twitter", twitter_settings_link: link_to(t(".fill_the_twitter_credentials"), controller: 'admin/settings', action: 'write'), twitter_registration_link: link_to(t(".registered_your_application"), "https://dev.twitter.com/apps/new")) %>
+  </p>
+<%- end %>
   <div class='control-group'>
     <label class='control-label' for="user_twitter_account"><%= t('.twitter_account')%></label>
     <div class='controls'>
@@ -196,5 +201,7 @@
   <% end %>
 
   <div class='form-actions'>
-    <%= cancel_or_save %>
+    <%= link_to(t(".cancel"), {action: 'index'}, class: 'btn') %>
+    <%= t(".or") %>
+    <%= submit_tag(t(".save"), class: 'btn btn-success') %>
   </div>

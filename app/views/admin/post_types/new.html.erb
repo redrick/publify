@@ -16,7 +16,9 @@
       <%= text_area :post_type, :description, rows: 5, class: 'form-control', placeholder: t(".description") %>
     </div>
     <div class='form-group'>
-      <%= cancel_or_save %>
+      <%= link_to(t(".cancel"), {action: 'index'}, class: 'btn') %>
+      <%= t(".or") %>
+      <%= submit_tag(t(".save"), class: 'btn btn-success') %>
     </div>
     <% end %>
   </div>

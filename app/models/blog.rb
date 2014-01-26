@@ -66,7 +66,7 @@ class Blog < ActiveRecord::Base
   setting :google_analytics,           :string, ''
   setting :feedburner_url,             :string, ''
   setting :rss_description,            :boolean, false
-  setting :rss_description_text,       :string, "<hr /><p><small>Original article writen by %author% and published on <a href='%blog_url%'>%blog_name%</a> | <a href='%permalink_url%'>direct link to this article</a> | If you are reading this article elsewhere than <a href='%blog_url%'>%blog_name%</a>, it has been illegally reproduced and without proper authorization.</small></p>"
+  setting :rss_description_text,       :string, "<hr /><p><small>Original article written by %author% and published on <a href='%blog_url%'>%blog_name%</a> | <a href='%permalink_url%'>direct link to this article</a> | If you are reading this article anywhere other than on <a href='%blog_url%'>%blog_name%</a>, it has been illegally reproduced and without proper authorization.</small></p>"
   setting :permalink_format,           :string, '/%year%/%month%/%day%/%title%'
   setting :robots,                     :string, ''
   setting :index_categories,           :boolean, true # deprecated but still needed for backward compatibility
@@ -87,8 +87,6 @@ class Blog < ActiveRecord::Base
   setting :page_desc_template,         :string, "%excerpt%"
   setting :paginated_title_template,   :string, "%blog_name% | %blog_subtitle% %page%"
   setting :paginated_desc_template,    :string, "%blog_name% | %blog_subtitle% | %meta_keywords% %page%"
-  setting :category_title_template,    :string, "Category: %name% | %blog_name% %page%"
-  setting :category_desc_template,     :string, "%name% | %description% | %blog_subtitle% %page%"
   setting :tag_title_template,         :string, "Tag: %name% | %blog_name% %page%"
   setting :tag_desc_template,          :string, "%name% | %blog_name% | %blog_subtitle% %page%"
   setting :author_title_template,      :string, "%author% | %blog_name%"
@@ -223,12 +221,11 @@ class Blog < ActiveRecord::Base
 
   def permalink_has_identifier
     unless permalink_format =~ /(%title%)/
-      errors.add(:permalink_format, _("You need a permalink format with an identifier : %%title%%"))
+      errors.add(:permalink_format, I18n.t("errors.permalink_nede_a_title"))
     end
 
-    # A permalink cannot end in .atom or .rss. it's reserved for the feeds
     if permalink_format =~ /\.(atom|rss)$/
-      errors.add(:permalink_format, _("Can't end in .rss or .atom. These are reserved to be used for feed URLs"))
+      errors.add(:permalink_format, I18n.t("errors.cant_end_with_rss_or_atom"))
     end
   end
 
