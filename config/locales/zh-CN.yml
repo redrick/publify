@@ -1,14 +1,64 @@
 zh-CN:
+  setup:
+    page:
+      about: "关于"
+      body: "This is an example of a Publify page. You can edit this to write information about yourself or your site so readers know who you are. You can create as many pages as this one as you like and manage all of your content inside Publify."
+  comments:
+    comment:
+      said: "發言"
+      this_comment_has_been_flagged_for_moderator_approval: "這篇评论被標示為版主所允許的。他不會在博客顯示直到版主承認他。"
+  tags:
+    index:
+      there_is_no_tags: "There is no tag"
+      next_page: "Next page"
+      previous_page: "Previous page"
   helper:
     at: "at"
   articles:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    search:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    comment_preview:
+      is_about_to_say: "这是关于~~"
+    meta:
+      published_on: "Published on"
+      by: "by"
+      tags: "标签"
+    article:
+      posted_by: "貼上"
+      this_entry_was_posted_on: "This entry was posted on %{published_at}"
+      you_can_follow_entries_through_the: "You can follow any response to this entry through the %{feed}"
+      atom_feed: "Atom feed"
+      you_can_leave_a: "You can leave a %{comment}"
+      comment: "comment"
+      or_trackback: "or a %{trackback} from your own site"
+      trackback: "trackback"
+      read_full_article: "Read full article"
+      comments: "评论"
+    archives:
+      posted_in: "发表在"
+      no_articles_found: "没有找到任何文章"
     read:
+      use_the_following_link_to_trackback: "從你所屬的網點用隨後的連結去引用"
+      trackbacks: "Trackbacks"
       edit: "修改"
       comments: "评论"
       leave_a_response: "離開一個回應"
       rss_feed: "為本篇提供RSS"
       comments_are_disabled: "评论停用"
     comment_form:
+      required: "required"
+      leave_a_comment: "Leave a comment"
+      comment_author: "Name %{author}"
+      email: "Email"
+      website: "Website"
+      comments: "comments"
+      markdown_enabled: "Markdown enabled"
+      textile_enabled: "Textile enabled"
+      never_displayed: "never displayed"
       comment: "comment"
       email_address: "Email address"
       your_website: "Your website"
@@ -30,6 +80,9 @@ zh-CN:
         one: "1 comment"
         other: "%{count} comments"
   notes:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
     note:
       view_on_twitter: "View on Twitter"
   profile:
@@ -57,6 +110,10 @@ zh-CN:
       next: "Next"
       last: "Last"
   layouts:
+    default:
+      html:
+        powered_by: "Powered by %{powered_by}"
+        designed_by: "Designed by %{designed_by}"
     administration:
       new: "New"
   authors:
@@ -107,6 +164,8 @@ zh-CN:
         or: "or"
         publish: "发布"
     redirects:
+      destroy:
+        success: 'Redirection was successfully deleted.'
       new:
         no_redirects: "这儿并不存在Redirects。让我们开始创建它。"
         cancel: "取消"
@@ -117,16 +176,21 @@ zh-CN:
         to: "To"
         leave_empty_to_shorten_a_link: "Leave empty to shorten a link"
     themes:
+      switchto:
+        success: "主题切换成功"
       index:
         choose_a_theme: "選擇主題"
         use_this_theme: "Use this theme"
         active_theme: "%{name} - 執行中主題"
     profiles:
       index:
+        success: "用户创建成功"
         your_profile: "Your profile"
     sidebar:
       index:
+        error: "有错误发生，可能是一些侧边栏丢失，请尝试重新安装或者手动卸载。"
         sidebar: "Sidebar"
+        drag_some_plugins_here: "拖曳一些plugins填滿你的sidebar"
         or: "or"
         cancel: "取消"
         explain_how_its_works: "在這個博客顯示拖曳改變的sidebar選項。從sidebar選項移除會立即存檔，但是不會執行直到你輸入<公開>鍵"
@@ -135,6 +199,8 @@ zh-CN:
         active_sidebar_items: "有效的側邊欄項目"
         download_more_plugins: "You can download and install sidebar plugins from our official <a href='https://github.com/fdv/publify/wiki/Sidebar-plugins'>plugin repository</a>. All you have to do is upload the theme directory in your vendor/plugins directory."
     settings:
+      update:
+        success: "更新配置"
       display:
         cancel: "取消"
         or: "or"
@@ -338,6 +404,8 @@ zh-CN:
         cancel: "取消"
         delete: "删除"
     tags:
+      edit:
+        success: "Tag已经更新" 
       new:
         no_tags: "这儿并不存在Tags。让我们开始创建它。"
         articles: "文章"
@@ -348,6 +416,11 @@ zh-CN:
         save: "保存"
         or: "or"
     resources:
+      upload:
+        success: "文件上传"
+        warning: "No file selected"
+      destroy:
+        notice: "删除"
       index:
         no_resources: "这儿并不存在Media。让我们开始创建它。"
         media_library: "Media Library"
@@ -375,6 +448,10 @@ zh-CN:
         publify_default_post_type: "Publify default post type"
         explain: "The template name is the filename Publify will look for when calling an article of that type. It should be in your theme under views/articles/template name.html.erb"
     pages:
+      new:
+        success: "页面创建成功"
+      edit:
+        success: "页面更新成功"
       index:
         manage_pages: "管理页面"
         new_page: "新页面"
@@ -398,7 +475,25 @@ zh-CN:
       pages:
         no_pages: "这儿并不存在Pages。让我们开始创建它。"
     feedback:
+      state:
+        unclassified: "Unclassified"
+        ham: "Ham"
+        presumed_ham: "Ham?"
+        just_presumed_ham: "Just Presumed Ham"
+        just_marked_as_ham: "Just Marked As Ham"
+        presumed_spam: "Spam?"
+        just_marked_as_spam: "Just Marked As Spam"
+        spam: "Spam"
+      update:
+        success: "评论更新成功"
+      create:
+        success: "评论创建成功"
+      destroy:
+        success: "删除"
+        error: "不存在"
       bulkops:
+        success_deleted_spam: "所有垃圾信息已经呗删除"
+        error: "未实现"
         success_mark_as_ham:
           zero: "No item selected to mark as Ham"
           one: "Marked 1 item as Ham"
@@ -454,6 +549,9 @@ zh-CN:
         cancel: "取消"
     dashboard:
       index:
+        error: "You are late from at least one major version of Publify. You should upgrade immediately. Download and install <a href='http://publify.co/stable.tgz'>the latest Publify version</a>"
+        warning: "There's a new version of Publify available which may contain important bug fixes. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
+        notice: "There's a new version of Publify available. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
         welcome_back: "欢迎回來， %{user_name}！"
       drafts:
         your_drafts: "Your drafts"
@@ -523,6 +621,15 @@ zh-CN:
       comments:
         latest_comments: "最近评论"
     content:
+      create:
+        success: "文章创建成功"
+      update:
+        success: "文章更新成功"
+        error: "错误，不允许进行此操作"
+      edit:
+        error: "错误，不允许进行此操作"
+      autosave:
+        success: "Article was successfully saved"
       article_list:
         no_articles: "这儿并不存在articles。让我们开始创建它。"
       index:
@@ -609,10 +716,14 @@ zh-CN:
         sweep_cache: "Sweep cache"
         cache: "儲存"
         explaination: "To save on resources, Publify generates static files along with your content. These files are deleted when a new article is created. You can, at any time, delete these files yourself."
+        success: "cache已清除"
+        error: "Cache could not be cleared"
     users:
       edit:
+        success: "用户创建成功"
         edit_user: "修改使用者"
       new:
+        success: "用户创建成功"
         add_user: "Add User"
       index:
         login: "登录"
@@ -681,6 +792,8 @@ zh-CN:
       password: "密码"
       remember_me: "记住用户"
       sign_in: "Sign in"
+      success: "登录成功"
+      error: "登录不成功"
     confirm:
       proceed_to: "Proceed to %{link}"
       admin: "admin"
@@ -688,11 +801,15 @@ zh-CN:
       title: "Recover your password"
       username_or_email: "用户名或邮箱"
       reset_my_password: "Reset my password"
+      notice: "你的新密码已经发送到你的email邮箱当中"
+      error: "噢，发生了一些错误"
     signup:
       title: "注册"
       username: "用户名"
       email: "Email"
       signup: "注册"
+    logout:
+      notice: "成功登出"
   langs:
     da_DK: "Danish"
     de_DE: "German"

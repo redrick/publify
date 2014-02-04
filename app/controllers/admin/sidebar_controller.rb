@@ -53,8 +53,7 @@ class Admin::SidebarController < Admin::BaseController
           sb_attribs[field.key] = field.canonicalize(sb_attribs[field.key])
         end
 
-        sidebar.update_attributes(:config => sb_attribs,
-                                  :active_position => position)
+        sidebar.update_attributes(:config => sb_attribs, :active_position => position)
         position += 1
       end
       Sidebar.delete_all('active_position is null')
@@ -82,7 +81,7 @@ class Admin::SidebarController < Admin::BaseController
         logger.error e
         # Avoiding the view to crash
         @active = []
-        gflash :error
+        flash[:error] = I18n.t('admin.sidebar.index.error')
       end
     end
     flash[:sidebars]

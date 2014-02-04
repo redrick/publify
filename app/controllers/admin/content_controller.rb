@@ -8,8 +8,9 @@ class Admin::ContentController < Admin::BaseController
   cache_sweeper :blog_sweeper
 
   def auto_complete_for_article_keywords
-    @items = Tag.find_with_char params[:article][:keywords].strip
-    render inline: "<%= raw auto_complete_result @items, 'name' %>"
+    @items = Tag.find(:all, select: :display_name, order: :display_name).map {|t| t.display_name}
+    
+    render inline: "<%= @items %>"
   end
 
   def index
@@ -35,7 +36,7 @@ class Admin::ContentController < Admin::BaseController
     update_article_attributes
 
     if @article.save
-      gflash :success
+      flash[:success] = I18n.t('admin.content.create.success')
       redirect_to action: 'index'
     else
       @article.keywords = Tag.collection_to_string @article.tags
@@ -71,7 +72,7 @@ class Admin::ContentController < Admin::BaseController
       unless @article.draft
         Article.where(parent_id: @article.id).map(&:destroy)
       end
-      gflash :success
+      flash[:success] = I18n.t('admin.content.update.success')
       redirect_to :action => 'index'
     else
       @article.keywords = Tag.collection_to_string @article.tags
@@ -108,7 +109,7 @@ class Admin::ContentController < Admin::BaseController
     end
 
     if @article.save
-      gflash :success
+      flash[:success] = I18n.t('admin.content.autosave.success')
       @must_update_calendar = (params[:article][:published_at] and params[:article][:published_at].to_time.to_i < Time.now.to_time.to_i and @article.parent_id.nil?)
       respond_to do |format|
         format.js
@@ -144,7 +145,7 @@ class Admin::ContentController < Admin::BaseController
     if article.access_by? current_user
       return true
     else
-      gflash :error
+      flash[:error] = I18n.t('admin.content.access_granted.error')
       redirect_to action: 'index'
       return false
     end

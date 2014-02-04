@@ -1,14 +1,64 @@
 ja:
+  setup:
+    page:
+      about: "About"
+      body: "This is an example of a Publify page. You can edit this to write information about yourself or your site so readers know who you are. You can create as many pages as this one as you like and manage all of your content inside Publify."
+  comments:
+    comment:
+      said: "発言"
+      this_comment_has_been_flagged_for_moderator_approval: "このコメントはモデレーターの確認が必要です。モデレーターが確認後にコメントが表示されます。"
+  tags:
+    index:
+      there_is_no_tags: "There is no tag"
+      next_page: "Next page"
+      previous_page: "Previous page"
   helper:
     at: "at"
   articles:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    search:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    comment_preview:
+      is_about_to_say: "〜について言う"
+    meta:
+      published_on: "Published on"
+      by: "by"
+      tags: "タグ"
+    article:
+      posted_by: "投稿者"
+      this_entry_was_posted_on: "This entry was posted on %{published_at}"
+      you_can_follow_entries_through_the: "You can follow any response to this entry through the %{feed}"
+      atom_feed: "Atom feed"
+      you_can_leave_a: "You can leave a %{comment}"
+      comment: "comment"
+      or_trackback: "or a %{trackback} from your own site"
+      trackback: "trackback"
+      read_full_article: "Read full article"
+      comments: "コメント"
+    archives:
+      posted_in: "Posted in"
+      no_articles_found: "記事が見つかりませんでした"
     read:
+      use_the_following_link_to_trackback: "トラックバックリンク"
+      trackbacks: "Trackbacks"
       edit: "Edit"
       comments: "コメント"
       leave_a_response: "コメントを書く"
       rss_feed: "この記事のRSSフィード"
       comments_are_disabled: "コメントは許可されていません"
     comment_form:
+      required: "required"
+      leave_a_comment: "Leave a comment"
+      comment_author: "Name %{author}"
+      email: "Email"
+      website: "Website"
+      comments: "comments"
+      markdown_enabled: "Markdown enabled"
+      textile_enabled: "Textile enabled"
+      never_displayed: "never displayed"
       comment: "comment"
       email_address: "Email address"
       your_website: "Your website"
@@ -30,6 +80,9 @@ ja:
         one: "1 comment"
         other: "%{count} comments"
   notes:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
     note:
       view_on_twitter: "View on Twitter"
   profile:
@@ -57,6 +110,10 @@ ja:
       next: "Next"
       last: "Last"
   layouts:
+    default:
+      html:
+        powered_by: "Powered by %{powered_by}"
+        designed_by: "Designed by %{designed_by}"
     administration:
       new: "New"
   authors:
@@ -107,6 +164,8 @@ ja:
         or: "or"
         publish: "公開"
     redirects:
+      destroy:
+        success: 'Redirection was successfully deleted.'
       new:
         no_redirects: "There are no redirects yet. Why don't you start and create one?"
         cancel: "キャンセル"
@@ -117,16 +176,21 @@ ja:
         to: "To"
         leave_empty_to_shorten_a_link: "Leave empty to shorten a link"
     themes:
+      switchto:
+        success: "Theme selection updated"
       index:
         choose_a_theme: "テーマの選択"
         use_this_theme: "Use this theme"
         active_theme: "%{name} - 現在のテーマ"
     profiles:
       index:
+        success: "プロフィールが更新されました"
         your_profile: "あなたのプロフィール"
     sidebar:
       index:
+        error: "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually"
         sidebar: "サイドバー"
+        drag_some_plugins_here: "サイドバーで利用するプラグインをドラッグしてください"
         or: "or"
         cancel: "キャンセル"
         explain_how_its_works: "ブログに表示するサイドバー項目をドラッグ＆ドロップで変更してください。サイドバーから項目を削除した場合はすぐに変更が保存されますが、「公開」ボタンを押すまでは有効になりません。"
@@ -135,6 +199,8 @@ ja:
         active_sidebar_items: "有効なサイドバー項目"
         download_more_plugins: "You can download and install sidebar plugins from our official <a href='https://github.com/fdv/publify/wiki/Sidebar-plugins'>plugin repository</a>. All you have to do is upload the theme directory in your vendor/plugins directory."
     settings:
+      update:
+        success: "設定は更新されました"
       display:
         cancel: "キャンセル"
         or: "or"
@@ -338,6 +404,8 @@ ja:
         cancel: "キャンセル"
         delete: "削除"
     tags:
+      edit:
+        success: "Tag was successfully updated" 
       new:
         no_tags: "There are no tags yet. Why don't you start and create one?"
         articles: "記事"
@@ -348,6 +416,11 @@ ja:
         save: "保存"
         or: "or"
     resources:
+      upload:
+        success: "アップロードするファイル"
+        warning: "アップロードできません"
+      destroy:
+        notice: "File has been deleted"
       index:
         no_resources: "There are no resources yet. Why don't you start and create one?"
         media_library: "Media Library"
@@ -375,6 +448,10 @@ ja:
         publify_default_post_type: "Publify default post type"
         explain: "The template name is the filename Publify will look for when calling an article of that type. It should be in your theme under views/articles/template name.html.erb"
     pages:
+      new:
+        success: "ページが作成されました"
+      edit:
+        success: "ページが更新されました"
       index:
         manage_pages: "ページの管理"
         new_page: "New Page"
@@ -398,7 +475,25 @@ ja:
       pages:
         no_pages: "There are no pages yet. Why don't you start and create one?"
     feedback:
+      state:
+        unclassified: "未分類"
+        ham: "Ham"
+        presumed_ham: "承認?"
+        just_presumed_ham: "承認と推定"
+        just_marked_as_ham: "承認マーク"
+        presumed_spam: "スパム?"
+        just_marked_as_spam: "スパムマーク"
+        spam: "Spam"
+      update:
+        success: "Comment was successfully updated."
+      create:
+        success: "Comment was successfully created."
+      destroy:
+        success: "Deleted"
+        error: "Not found"
       bulkops:
+        error: "Not implemented"
+        success_deleted_spam: "All spam have been deleted"
         success_mark_as_ham: 
           zero: "No item selected to mark as Ham"
           one: "Marked 1 item as Ham"
@@ -454,6 +549,9 @@ ja:
         cancel: "キャンセル"
     dashboard:
       index:
+        error: "You are late from at least one major version of Publify. You should upgrade immediately. Download and install <a href='http://publify.co/stable.tgz'>the latest Publify version</a>"
+        warning: "There's a new version of Publify available which may contain important bug fixes. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
+        notice: "There's a new version of Publify available. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
         welcome_back: "お帰りなさいませ、%{user_name} 様"
       drafts:
         your_drafts: "Your drafts"
@@ -523,6 +621,15 @@ ja:
       comments:
         latest_comments: "Latest Comments"
     content:
+      create:
+        success: "記事を作成しました"
+      update:
+        success: "記事が更新されました"
+        error: "あなたのアカウントではこの操作は許可されていません"
+      edit:
+        error: "あなたのアカウントではこの操作は許可されていません"
+      autosave:
+        success: "Article was successfully saved"
       article_list:
         no_articles: "There are no articles yet. Why don't you start and create one?"
       index:
@@ -609,10 +716,14 @@ ja:
         sweep_cache: "キャッシュをクリア"
         cache: "キャッシュ"
         explaination: "To save on resources, Publify generates static files along with your content. These files are deleted when a new article is created. You can, at any time, delete these files yourself."
+        success: "キャッシュはクリアされました"
+        error: "Cache could not be cleared"
     users:
       edit:
+        success: "プロフィールが更新されました"
         edit_user: "ユーザー編集"
       new:
+        success: "User was successfully created"
         add_user: "ユーザーの追加"
       index:
         login: "ログイン"
@@ -681,6 +792,8 @@ ja:
       password: "パスワード"
       remember_me: "ログイン状態を持続"
       sign_in: "Sign in"
+      success: "ログインしました"
+      error: "ログインに失敗しました"
     confirm:
       proceed_to: "Proceed to %{link}"
       admin: "admin"
@@ -688,11 +801,15 @@ ja:
       title: "Recover your password"
       username_or_email: "Username or email"
       reset_my_password: "Reset my password"
+      notice: "An email has been successfully sent to your address with your new password"
+      error: "Oops, something wrong just happened"
     signup:
       title: "サインアップ"
       username: "ユーザー名"
       email: "メールアドレス"
       signup: "サインアップ"
+    logout:
+      notice: "ログアウトしました"
   langs:
     da_DK: "Danish"
     de_DE: "German"

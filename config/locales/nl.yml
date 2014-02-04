@@ -1,14 +1,64 @@
 nl:
+  setup:
+    page:
+      about: "Over"
+      body: "This is an example of a Publify page. You can edit this to write information about yourself or your site so readers know who you are. You can create as many pages as this one as you like and manage all of your content inside Publify."
+  comments:
+    comment:
+      said: "zei"
+      this_comment_has_been_flagged_for_moderator_approval: "Dit commentaar is gemarkeerd voor goedkeuring. Het zal niet getoond worden totdat de auteur het goedkeurt."
+  tags:
+    index:
+      there_is_no_tags: "There is no tag"
+      next_page: "Next page"
+      previous_page: "Previous page"
   helper:
     at: "at"
   articles:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    search:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    comment_preview:
+      is_about_to_say: "gaat zeggen"
+    meta:
+      published_on: "Published on"
+      by: "by"
+      tags: "Trefwoorden"
+    article:
+      posted_by: "Geplaatst door"
+      this_entry_was_posted_on: "This entry was posted on %{published_at}"
+      you_can_follow_entries_through_the: "Je kunt reacties op dit bericht volgen via de %{feed}"
+      atom_feed: "Atom feed"
+      you_can_leave_a: "Je kunt een %{comment} achterlaten"
+      comment: "reactie"
+      or_trackback: "of een %{trackback} vanaf je eigen site"
+      trackback: "trackback"
+      read_full_article: "Lees volledige artikel"
+      comments: "Reacties"
+    archives:
+      posted_in: "Geplaatst in"
+      no_articles_found: "Geen artikelen gevonden"
     read:
+      use_the_following_link_to_trackback: "Gebruik de volgende link voor een trackback van jouw site"
+      trackbacks: "Trackbacks"
       edit: "Bewerken"
       comments: "Reacties"
       leave_a_response: "Geef een reactie"
       rss_feed: "RSS feed voor dit bericht"
       comments_are_disabled: "Reacties zijn niet mogelijk"
     comment_form:
+      required: "required"
+      leave_a_comment: "Geef een reactie"
+      comment_author: "Naam %{author}"
+      email: "e-mail"
+      website: "Website"
+      comments: "Reacties"
+      markdown_enabled: "Markdown beschikbaar"
+      textile_enabled: "Textile beschikbaar"
+      never_displayed: "wordt niet getoond"
       comment: "reactie"
       email_address: "E-mailadres"
       your_website: "Je website"
@@ -30,6 +80,9 @@ nl:
         one: "1 comment"
         other: "%{count} comments"
   notes:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
     note:
       view_on_twitter: "View on Twitter"
   profile:
@@ -57,6 +110,10 @@ nl:
       next: "Volgende"
       last: "Last"
   layouts:
+    default:
+      html:
+        powered_by: "Powered by %{powered_by}"
+        designed_by: "Ontworpen door %{designed_by}"
     administration:
       new: "Nieuwe"
   authors:
@@ -107,6 +164,8 @@ nl:
         or: "or"
         publish: "Publiceer"
     redirects:
+      destroy:
+        success: 'Redirection was successfully deleted.'
       new:
         no_redirects: "Er zijn nog geen redirects. Waarom begin je er niet een te maken?"
         cancel: "Terug"
@@ -117,16 +176,21 @@ nl:
         to: "To"
         leave_empty_to_shorten_a_link: "Leave empty to shorten a link"
     themes:
+      switchto:
+        success: "Thema succesvol aangepast"
       index:
         choose_a_theme: "Kies een thema"
         use_this_theme: "Use this theme"
         active_theme: "%{name} - Actieve thema's"
     profiles:
       index:
+        success: "Gebruiker is succesvol bijgewerkt"
         your_profile: "Je profiel"
     sidebar:
       index:
+        error: "Het lijkt er op dat er iets fout ging. Misschien ontbreken sommige zijbalken en moet je ze opnieuw installeren of handmatig verwijderen"
         sidebar: "Zijbalk"
+        drag_some_plugins_here: "Sleep wat plugins naar hier om de zijbalk te vullen"
         or: "or"
         cancel: "Terug"
         explain_how_its_works: "Sleep dingen heen en weer om de zijbalk van dit blog aan te passen. Om dingen te verwijderen klik je op verwijderen  Wijzigen worden automatisch opgeslagen, maar niet geactiveerd totdat je de 'Publiceer' knop klikt"
@@ -135,6 +199,8 @@ nl:
         active_sidebar_items: "Actieve zijbalk dingen"
         download_more_plugins: "You can download and install sidebar plugins from our official <a href='https://github.com/fdv/publify/wiki/Sidebar-plugins'>plugin repository</a>. All you have to do is upload the theme directory in your vendor/plugins directory."
     settings:
+      update:
+        success: "configuratie bijgewerkt"
       display:
         cancel: "Terug"
         or: "or"
@@ -338,6 +404,8 @@ nl:
         cancel: "Terug"
         delete: "Verwijderen"
     tags:
+      edit:
+        success: "Tag was succesvol bijgewerkt."
       new:
         no_tags: "Er zijn nog geen trefwoorden. Waarom begin je er niet een te maken?"
         articles: "Artikelen"
@@ -348,6 +416,11 @@ nl:
         save: "Bewaar"
         or: "or"
     resources:
+      upload:
+        success: "Bestand geupload"
+        warning: "Kon niet uploaden"
+      destroy:
+        notice: "Verwijderd"
       index:
         no_resources: "Er zijn nog geen media. Waarom begin je er niet een te maken?"
         media_library: "Media Library"
@@ -375,6 +448,10 @@ nl:
         publify_default_post_type: "Publify default post type"
         explain: "The template name is the filename Publify will look for when calling an article of that type. It should be in your theme under views/articles/template name.html.erb"
     pages:
+      new:
+        success: "Pagina is succesvol aangemaakt"
+      edit:
+        success: "Pagina is succesvol bijgewerkt"
       index:
         manage_pages: "Beheer pagina's"
         new_page: "Nieuwe pagina"
@@ -398,7 +475,25 @@ nl:
       pages: 
         no_pages: "Er zijn nog geen pages. Waarom begin je er niet een te maken?"
     feedback:
+      state:
+        unclassified: "Niet geclassificeerd"
+        ham: "Ham"
+        presumed_ham: "Ham?"
+        just_presumed_ham: "Zojuist aangenomen dat dit Ham is"
+        just_marked_as_ham: "Zojuist gemarkeerd als Ham"
+        presumed_spam: "Spam?"
+        just_marked_as_spam: "Zojuist gemarkeerd als Spam"
+        spam: "Spam"
+      update:
+        success: "Commentaar is succesvol bijgewerkt."
+      create:
+        success: "Commentaar is succesvol aangemaakt."
+      destroy:
+        success: "Verwijderd"
+        error: "Niet gevonden"
       bulkops:
+        error: "Niet geimplementeerd"
+        success_deleted_spam: "Alle spam is verwijderd"
         success_mark_as_ham: 
           zero: "No item selected to mark as Ham"
           one: "1 Item gemarkeerd als Ham"
@@ -454,6 +549,9 @@ nl:
         cancel: "Terug"
     dashboard:
       index:
+        error: "You are late from at least one major version of Publify. You should upgrade immediately. Download and install <a href='http://publify.co/stable.tgz'>the latest Publify version</a>"
+        warning: "There's a new version of Publify available which may contain important bug fixes. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
+        notice: "There's a new version of Publify available. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
         welcome_back: "Welkom terug, %{user_name}!"
       drafts:
         your_drafts: "Your drafts"
@@ -523,6 +621,15 @@ nl:
       comments:
         latest_comments: "Laatste reacties"
     content:
+      create:
+        success: "Artikel is succesvol gemaakt"
+      update:
+        success: "Artikel is succesvol bijgewerkt."
+        error: "Fout, je mag dit niet doen"
+      edit:
+        error: "Fout, je mag dit niet doen"
+      autosave:
+        success: "Article was successfully saved"
       article_list:
         no_articles: "Er zijn nog geen articles. Waarom begin je er niet een te maken?"
       index:
@@ -609,10 +716,14 @@ nl:
         sweep_cache: "Sweep cache"
         cache: "Cache"
         explaination: "To save on resources, Publify generates static files along with your content. These files are deleted when a new article is created. You can, at any time, delete these files yourself."
+        success: "Cache has been sweeped"
+        error: "Cache could not be cleared"
     users:
       edit:
+        success: "Gebruiker is succesvol bijgewerkt."
         edit_user: "Gebruiker wijzigen"
       new:
+        success: "Gebruiker succesvol aangemaakt."
         add_user: "Gebruiker toevoegen"
       index:
         login: "inloggen"
@@ -681,6 +792,8 @@ nl:
       password: "Wachtwoord"
       remember_me: "Onthoud me"
       sign_in: "Sign in"
+      success: "Login geslaagd"
+      error: "Login mislukt"
     confirm:
       proceed_to: "Ga door naar %{link}"
       admin: "admin"
@@ -688,11 +801,15 @@ nl:
       title: "Herstel uw wachtwoord"
       username_or_email: "Gebruikersnaam of e-mail"
       reset_my_password: "Reset my password"
+      notice: "Er is je met succes een e-mail gestuurd met uw nieuwe wachtwoord"
+      error: "Oeps, er is net iets misgegaan"
     signup:
       title: "aanmelden"
       username: "Gebruikersnaam"
       email: "E-mail"
       signup: "Meld aan"
+    logout:
+      notice: "Succesvol uitgelogd"
   langs:
     da_DK: "Danish"
     de_DE: "German"

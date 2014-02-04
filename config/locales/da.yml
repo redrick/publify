@@ -1,14 +1,64 @@
 da:
+  setup:
+    page:
+      about: "About"
+      body: "This is an example of a Publify page. You can edit this to write information about yourself or your site so readers know who you are. You can create as many pages as this one as you like and manage all of your content inside Publify."
+  comments:
+    comment:
+      said: "sagde"
+      this_comment_has_been_flagged_for_moderator_approval: "Denne kommentar er blevet markeret som krævende godkendelse. Den vil ikke blive vist før forfatteren godkender den."
+  tags:
+    index:
+      there_is_no_tags: "There is no tag"
+      next_page: "Next page"
+      previous_page: "Previous page"
   helper:
     at: "at"
   articles:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    search:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    comment_preview:
+      is_about_to_say: "vil gerne sige"
+    meta:
+      published_on: "Published on"
+      by: "af"
+      tags: "Tags"
+    article:
+      posted_by: "Skrevet af"
+      this_entry_was_posted_on: "This entry was posted on %{published_at}"
+      you_can_follow_entries_through_the: "You can follow any response to this entry through the %{feed}"
+      atom_feed: "Atom feed"
+      you_can_leave_a: "You can leave a %{comment}"
+      comment: "comment"
+      or_trackback: "or a %{trackback} from your own site"
+      trackback: "trackback"
+      read_full_article: "Read full article"
+      comments: "Kommentarer"
+    archives:
+      posted_in: "Posted in"
+      no_articles_found: "Fandt ingen artikler"
     read:
+      use_the_following_link_to_trackback: "Brug følgende link til lave trackback fra din egen side"
+      trackbacks: "Trackbacks"
       edit: "Rediger"
       comments: "Kommentarer"
       leave_a_response: "Skriv en kommentar"
       rss_feed: "RSS Feed for denne artikel"
       comments_are_disabled: "Kommentarer er deaktiveret"
     comment_form:
+      required: "required"
+      leave_a_comment: "Skriv en kommentar"
+      comment_author: "Navn %{author}"
+      email: "Email"
+      website: "Website"
+      comments: "Kommentarer"
+      markdown_enabled: "Markdown enabled"
+      textile_enabled: "Textile enabled"
+      never_displayed: "never displayed"
       comment: "comment"
       email_address: "Email address"
       your_website: "Your website"
@@ -30,6 +80,9 @@ da:
         one: "1 comment"
         other: "%{count} kommentarer"
   notes:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
     note:
       view_on_twitter: "View on Twitter"
   profile:
@@ -107,6 +160,8 @@ da:
         or: "or"
         publish: "Udgiv"
     redirects:
+      destroy:
+        success: 'Redirection was successfully deleted.'
       new:
         no_redirects: "There are no redirects yet. Why don't you start and create one?"
         cancel: "Anuller"
@@ -117,16 +172,21 @@ da:
         to: "To"
         leave_empty_to_shorten_a_link: "Leave empty to shorten a link"
     themes:
+      switchto:
+        success: "Theme selection updated"
       index:
         choose_a_theme: "Vælg et tema"
         use_this_theme: "Use this theme"
         active_theme: "%{name} - Aktiv tema"
     profiles:
       index:
+        success: "User details updated"
         your_profile: "Din profil"
     sidebar:
       index:
+        error: "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually"
         sidebar: "Sidebar"
+        drag_some_plugins_here: "Træk plugins herover for at fylde din sidebar"
         or: "or"
         cancel: "Anuller"
         explain_how_its_works: "Træk og slip for at ændre indholdsoversigten der vises på denne blog. Du kan fjerne elementer fra indholdsoversigten bare ved at klikke fjern. Ændringer gemmes med det samme, men ikke aktiveret, før du klikker på 'Offentliggør' knappen."
@@ -135,6 +195,8 @@ da:
         active_sidebar_items: "Aktive sidebar objekter"
         download_more_plugins: "You can download and install sidebar plugins from our official <a href='https://github.com/fdv/publify/wiki/Sidebar-plugins'>plugin repository</a>. All you have to do is upload the theme directory in your vendor/plugins directory."
     settings:
+      update:
+        success: "Config updated."
       display:
         cancel: "Anuller"
         or: "or"
@@ -183,7 +245,7 @@ da:
         days: "dage"
         set_to_0_to_never_disable_comments: "Sæt til 0 for at aldrig deaktivere kommentarer"
         max_links: "Max Links"
-        explain_reject_comments: "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them" 
+        explain_reject_comments: "Publify will automatically reject comments and trackbacks which contain over a certain amount of links in them"
         set_to_0_to_never_reject_comments: "Sæt til 0 for at aldrig forkaste kommentarer"
         captcha: "Captcha"
         enable_recaptcha: "Enable reCaptcha"
@@ -338,6 +400,8 @@ da:
         cancel: "Anuller"
         delete: "Slet"
     tags:
+      edit:
+        success: "Tag was successfully updated" 
       new:
         no_tags: "There are no tags yet. Why don't you start and create one?"
         articles: "Artikler"
@@ -348,6 +412,11 @@ da:
         save: "Gem"
         or: "or"
     resources:
+      upload:
+        success: "File uploaded"
+        warning: "No file selected"
+      destroy:
+        notice: "File has been deleted"
       index:
         no_resources: "There are no resources yet. Why don't you start and create one?"
         media_library: "Media Library"
@@ -375,6 +444,10 @@ da:
         publify_default_post_type: "Publify default post type"
         explain: "The template name is the filename Publify will look for when calling an article of that type. It should be in your theme under views/articles/template name.html.erb"
     pages:
+      new:
+        success: "New page created"
+      edit:
+        success: "Page has been updated"
       index:
         manage_pages: "Administrer sider"
         new_page: "ny Side"
@@ -398,12 +471,30 @@ da:
       pages:
         no_pages: "There are no pages yet. Why don't you start and create one?"
     feedback:
+      state:
+        unclassified: "Unclassified"
+        ham: "Ham"
+        presumed_ham: "Ham?"
+        just_presumed_ham: "Just Presumed Ham"
+        just_marked_as_ham: "Just Marked As Ham"
+        presumed_spam: "Spam?"
+        just_marked_as_spam: "Just Marked As Spam"
+        spam: "Spam"
+      update:
+        success: "Comment was successfully updated."
+      create:
+        success: "Comment was successfully created."
+      destroy:
+        success: "Deleted"
+        error: "Not found"
       bulkops:
-        success_mark_as_ham: 
+        error: "Not implemented"
+        success_deleted_spam: "All spam have been deleted"
+        success_mark_as_ham:
           zero: "No item selected to mark as Ham"
           one: "Marked 1 item as Ham"
           other: "Marked %{count} items as Ham"
-        success_mark_as_spam: 
+        success_mark_as_spam:
           zero: "No item selected to mark as Spam"
           one: "Marked 1 item as Spam"
           other: "Marked %{count} items as Spam"
@@ -454,6 +545,9 @@ da:
         cancel: "Anuller"
     dashboard:
       index:
+        error: "You are late from at least one major version of Publify. You should upgrade immediately. Download and install <a href='http://publify.co/stable.tgz'>the latest Publify version</a>"
+        warning: "There's a new version of Publify available which may contain important bug fixes. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
+        notice: "There's a new version of Publify available. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
         welcome_back: "Velkommen tilbage, %{user_name}!"
       drafts:
         your_drafts: "Your drafts"
@@ -523,6 +617,15 @@ da:
       comments:
         latest_comments: "Seneste kommentarer"
     content:
+      create:
+        success: "Article was successfully created"
+      update:
+        success: "Article was successfully updated"
+        error: "Error, you are not allowed to perform this action"
+      edit:
+        error: "Error, you are not allowed to perform this action"
+      autosave:
+        success: "Article was successfully saved"
       article_list:
         no_articles: "There are no articles yet. Why don't you start and create one?"
       index:
@@ -609,10 +712,14 @@ da:
         sweep_cache: "Sweep cache"
         cache: "Cache"
         explaination: "To save on resources, Publify generates static files along with your content. These files are deleted when a new article is created. You can, at any time, delete these files yourself."
+        success: "Cache has been sweeped"
+        error: "Cache could not be cleared"
     users:
       edit:
+        success: "User was successfully updated"
         edit_user: "Rediger bruger"
       new:
+        success: "User was successfully created"
         add_user: "Add User"
       index:
         login: "Log ind"
@@ -681,6 +788,8 @@ da:
       password: "Kodeord"
       remember_me: "Remember me"
       sign_in: "Sign in"
+      success: "Login successful"
+      error: "Login unsuccessful"
     confirm:
       proceed_to: "Proceed to %{link}"
       admin: "admin"
@@ -688,6 +797,10 @@ da:
       title: "Recover your password"
       username_or_email: "Username or email"
       reset_my_password: "Reset my password"
+      notice: "An email has been successfully sent to your address with your new password"
+      error: "Oops, something wrong just happened"
+    logout:
+      notice: "Successfully logged out"
     signup:
       title: "Tilmelding"
       username: "Brugernavn"

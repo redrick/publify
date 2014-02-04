@@ -1,15 +1,65 @@
 ru:
+  setup:
+    page:
+      about: "About"
+      body: "This is an example of a Publify page. You can edit this to write information about yourself or your site so readers know who you are. You can create as many pages as this one as you like and manage all of your content inside Publify."
+  comments:
+    comment:
+      said: "said"
+      this_comment_has_been_flagged_for_moderator_approval: "This comment has been flagged for moderator approval.  It won't appear on this blog until the author approves it"
+  tags:
+    index:
+      there_is_no_tags: "There is no tag"
+      next_page: "Next page"
+      previous_page: "Previous page"
   helper:
     at: "at"
   articles:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    search:
+      next_page: "Next page"
+      previous_page: "Previous page"
+    comment_preview:
+      is_about_to_say: "is about to say"
+    meta:
+      published_on: "Опубликовано"
+      by: "by"
+      tags: "Теги"
+    article:
+      posted_by: "Posted by"
+      this_entry_was_posted_on: "This entry was posted on %{published_at}"
+      you_can_follow_entries_through_the: "You can follow any response to this entry through the %{feed}"
+      atom_feed: "Atom feed"
+      you_can_leave_a: "You can leave a %{comment}"
+      comment: "Отправить комментарий"
+      or_trackback: "or a %{trackback} from your own site"
+      trackback: "trackback"
+      read_full_article: "Read full article"
+      comments: "комментариев"
+    archives:
+      posted_in: "Posted in"
+      no_articles_found: "No articles found"
     read:
+      use_the_following_link_to_trackback: "Use the following link to trackback from your own site"
+      trackbacks: "Trackbacks"
       edit: "Редактировать"
       comments: "комментариев"
       leave_a_response: "Оставить отзыв"
       rss_feed: "RSS feed"
       comments_are_disabled: "Комментарии выключены"
     comment_form:
-      comment: "comment"
+      required: "required"
+      leave_a_comment: "Leave a comment"
+      comment_author: "Name %{author}"
+      email: "Email"
+      website: "Website"
+      comments: "comments"
+      markdown_enabled: "Markdown enabled"
+      textile_enabled: "Textile enabled"
+      never_displayed: "never displayed"
+      comment: "Отправить комментарий"
       email_address: "Электронная почта"
       your_website: "Веб-сайт"
       leave_url_email: "leave url/email"
@@ -30,6 +80,9 @@ ru:
         one: "1 comment"
         other: "%{count} comments"
   notes:
+    index:
+      next_page: "Next page"
+      previous_page: "Previous page"
     note:
       view_on_twitter: "View on Twitter"
   profile:
@@ -57,6 +110,10 @@ ru:
       next: "Next"
       last: "Last"
   layouts:
+    default:
+      html:
+        powered_by: "Powered by %{powered_by}"
+        designed_by: "Designed by %{designed_by}"
     administration:
       new: "New"
   authors:
@@ -107,6 +164,8 @@ ru:
         or: "or"
         publish: "Опубликовать"
     redirects:
+      destroy:
+        success: 'Redirection was successfully deleted.'
       new:
         no_redirects: "Ничего нет. Почему бы не начать и не добавить?"
         cancel: "Отменить"
@@ -117,16 +176,21 @@ ru:
         to: "To"
         leave_empty_to_shorten_a_link: "Leave empty to shorten a link"
     themes:
+      switchto:
+        success: "Theme selection updated"
       index:
         choose_a_theme: "Choose a theme"
         use_this_theme: "Use this theme"
         active_theme: "%{name} - Active theme"
     profiles:
       index:
+        success: "User details updated"
         your_profile: "Ваш профиль"
     sidebar:
       index:
+        error: "It seems something went wrong. Maybe some of your sidebars are actually missing and you should either reinstall them or remove them manually"
         sidebar: "Sidebar"
+        drag_some_plugins_here: "Drag some plugins here to fill your sidebar"
         or: "or"
         cancel: "Отменить"
         explain_how_its_works: "Drag and drop to change the sidebar items displayed on this blog. To remove items from the sidebar just click 'remove'. Changes are saved immediately, but not activated until you click the 'Publish changes' button"
@@ -135,6 +199,8 @@ ru:
         active_sidebar_items: "Active Sidebar items"
         download_more_plugins: "You can download and install sidebar plugins from our official <a href='https://github.com/fdv/publify/wiki/Sidebar-plugins'>plugin repository</a>. All you have to do is upload the theme directory in your vendor/plugins directory."
     settings:
+      update:
+        success: "Config updated."
       display:
         cancel: "Отменить"
         or: "or"
@@ -338,6 +404,8 @@ ru:
         cancel: "Отменить"
         delete: "Удалить"
     tags:
+      edit:
+        success: "Tag was successfully updated"
       new:
         no_tags: "Ничего нет. Почему бы не начать и не добавить?"
         articles: "Articles"
@@ -348,6 +416,11 @@ ru:
         save: "Сохранить"
         or: "or"
     resources:
+      upload:
+        success: "File uploaded"
+        warning: "No file selected"
+      destroy:
+        notice: "File has been deleted"
       index:
         no_resources: "Ничего нет. Почему бы не начать и не добавить?"
         media_library: "Media Library"
@@ -375,6 +448,10 @@ ru:
         publify_default_post_type: "Publify default post type"
         explain: "The template name is the filename Publify will look for when calling an article of that type. It should be in your theme under views/articles/template name.html.erb"
     pages:
+      new:
+        success: "New page created"
+      edit:
+        success: "Page has been updated"
       index:
         manage_pages: "Manage pages"
         new_page: "Новая страница"
@@ -398,7 +475,25 @@ ru:
       pages:
         no_pages: "Ничего нет. Почему бы не начать и не добавить?"
     feedback:
+      state:
+        unclassified: "Unclassified"
+        ham: "Ham"
+        presumed_ham: "Ham?"
+        just_presumed_ham: "Just Presumed Ham"
+        just_marked_as_ham: "Just Marked As Ham"
+        presumed_spam: "Spam?"
+        just_marked_as_spam: "Just Marked As Spam"
+        spam: "Spam"
+      update:
+        success: "Comment was successfully updated."
+      create:
+        success: "Comment was successfully created."
+      destroy:
+        success: "Deleted"
+        error: "Not found"
       bulkops:
+        error: "Not implemented"
+        success_deleted_spam: "All spam have been deleted"
         success_mark_as_ham:
           zero: "No item selected to mark as Ham"
           one: "Marked 1 item as Ham"
@@ -454,6 +549,9 @@ ru:
         cancel: "Отменить"
     dashboard:
       index:
+        error: "You are late from at least one major version of Publify. You should upgrade immediately. Download and install <a href='http://publify.co/stable.tgz'>the latest Publify version</a>"
+        warning: "There's a new version of Publify available which may contain important bug fixes. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
+        notice: "There's a new version of Publify available. Why don't you upgrade to <a href='http://publify.co/stable.tgz'>the latest Publify version</a> ?"
         welcome_back: "Добро пожаловать снова, %{user_name}!"
       drafts:
         your_drafts: "Ваши черновики"
@@ -523,6 +621,15 @@ ru:
       comments:
         latest_comments: "Последние комментарии"
     content:
+      create:
+        success: "Article was successfully created"
+      update:
+        success: "Article was successfully updated"
+        error: "Error, you are not allowed to perform this action"
+      edit:
+        error: "Error, you are not allowed to perform this action"
+      autosave:
+        success: "Article was successfully saved"
       article_list:
         no_articles: "Ничего нет. Почему бы не начать и не добавить?"
       index:
@@ -609,10 +716,14 @@ ru:
         sweep_cache: "Sweep cache"
         cache: "Cache"
         explaination: "To save on resources, Publify generates static files along with your content. These files are deleted when a new article is created. You can, at any time, delete these files yourself."
+        success: "Cache has been sweeped"
+        error: "Cache could not be cleared"
     users:
       edit:
+        success: "User was successfully updated"		  
         edit_user: "Edit User"
       new:
+        success: "User was successfully created"
         add_user: "Add User"
       index:
         login: "логин"
@@ -681,6 +792,8 @@ ru:
       password: "Пароль"
       remember_me: "Запомнить меня"
       sign_in: "Войти"
+      success: "Вход успешный"
+      error: "Не получилось зайти"
     confirm:
       proceed_to: "Proceed to %{link}"
       admin: "admin"
@@ -688,11 +801,15 @@ ru:
       title: "Восстановление пароля"
       username_or_email: "Имя пользователи или email"
       reset_my_password: "Сбросить мой пароль"
+      notice: "Письмо с паролем было выслано на ваш адрес"
+      error: "Упс, произошло что-то нехорошее"
     signup:
       title: "войти"
       username: "Username"
       email: "Email"
       signup: "войти"
+    logout:
+      notice: "Вы успешно вышли"
   langs:
     da_DK: "Danish"
     de_DE: "German"
