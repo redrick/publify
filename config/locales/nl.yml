@@ -1,10 +1,40 @@
 nl:
+  activerecord:
+    errors:
+      template:
+        header: ""
+        body: ""
+      models:
+        article:
+          attributes:
+            title:
+              blank: "can't be blank"
+  datetime:
+    distance_in_words:
+      x_days: "Distance in words"
+  errors:
+    404:
+      page_not_found: "Page not found"
+      the_page_you_are_looking_for: "The page you are looking for has moved or does not exist."
   setup:
+    confirm:
+      you_have_successfully_signed_up: "Je bent succesvol aangemeld"
+      login: "Inlognaam: %{user}"
+      password: "Wachtwoord: %{pass}"
+      dont_lose_the_mail_sent: "Verlies de e-mail verzonden naar %{email}, want anders kun je niet meer inloggen"
+      proceed_to: "Ga door naar %{link}"
+      admin: "admin"
+    index:
+      blog_name: "Blog name"
+      save: "Save"
+      welcome_to_your_blog_setup: "Welkom bij je blog setup."
+      your_mail: "Your email"
     page:
       about: "Over"
       body: "This is an example of a Publify page. You can edit this to write information about yourself or your site so readers know who you are. You can create as many pages as this one as you like and manage all of your content inside Publify."
   comments:
     comment:
+      by: "by"
       said: "zei"
       this_comment_has_been_flagged_for_moderator_approval: "Dit commentaar is gemarkeerd voor goedkeuring. Het zal niet getoond worden totdat de auteur het goedkeurt."
   tags:
@@ -42,6 +72,11 @@ nl:
       posted_in: "Geplaatst in"
       no_articles_found: "Geen artikelen gevonden"
     read:
+      comments_are_disabled: "Comments are disabled"
+      trackbacks_for: "Trackbacks for"
+      trackbacks_are_disabled: "Trackbacks are disabled"
+      if_you_liked_this_article_you_can: "If you liked this article you can %{add_twitter}"
+      add_me_to_twitter: "add me to Twitter"
       use_the_following_link_to_trackback: "Gebruik de volgende link voor een trackback van jouw site"
       trackbacks: "Trackbacks"
       edit: "Bewerken"
@@ -129,14 +164,6 @@ nl:
       posted_in: "postet i"
       next_page: "Next page"
       previous_page: "Previous page"
-  setup:
-    confirm:
-      you_have_successfully_signed_up: "Je bent succesvol aangemeld"
-      login: "Inlognaam: %{user}"
-      password: "Wachtwoord: %{pass}"
-      dont_lose_the_mail_sent: "Verlies de e-mail verzonden naar %{email}, want anders kun je niet meer inloggen"
-      proceed_to: "Ga door naar %{link}"
-      admin: "admin"
   admin:
     base:
       restart_application: "For security reasons, you should restart your Publify application. Enjoy your blogging experience."
@@ -711,11 +738,12 @@ nl:
       dashboard: "Dashboard"
       powered_by: "wordt trots aangedreven door"
     cache:
-      index:
+      show:
         stats: "There are currently %{files_count} files in cache for a total amount of %{size} Kb"
         sweep_cache: "Sweep cache"
         cache: "Cache"
         explaination: "To save on resources, Publify generates static files along with your content. These files are deleted when a new article is created. You can, at any time, delete these files yourself."
+      destroy:
         success: "Cache has been sweeped"
         error: "Cache could not be cleared"
     users:
