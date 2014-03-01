@@ -1,12 +1,4 @@
 Rails.application.routes.draw do
-  # Load plugin routes first. A little bit ugly, but I didn't find any better way to do it
-  # We consider that only publify_* plugins are concerned
-  Dir.glob(File.join("vendor", "plugins", "publify_*")).each do |dir|
-    if File.exists?(File.join(dir, "config", "routes.rb"))
-      require File.join(dir, "config", "routes.rb")
-    end
-  end
-
   # TODO: use only in archive sidebar. See how made other system
   match ':year/:month', :to => 'articles#index', :year => /\d{4}/, :month => /\d{1,2}/, :as => 'articles_by_month', :format => false
   match ':year/:month/page/:page', :to => 'articles#index', :year => /\d{4}/, :month => /\d{1,2}/, :as => 'articles_by_month_page', :format => false
@@ -97,19 +89,21 @@ Rails.application.routes.draw do
       end
     end
 
+    resources :notes, except: [:new]
+
     get 'cache', to: 'cache#show'
     delete 'cache', to: 'cache#destroy'
   end
 
   # Work around the Bad URI bug
-  %w{ accounts backend files sidebar }.each do |i|
+  %w{ accounts files sidebar }.each do |i|
     match "#{i}", :to => "#{i}#index", :format => false
     match "#{i}(/:action)", :to => i, :format => false
     match "#{i}(/:action(/:id))", :to => i, :id => nil, :format => false
   end
 
   # Admin/XController
-  %w{content comments profiles general pages feedback resources sidebar textfilters themes trackbacks users settings tags redirects seo post_types notes }.each do |i|
+  %w{content comments profiles general pages feedback resources sidebar textfilters themes trackbacks users settings tags redirects seo post_types}.each do |i|
     match "/admin/#{i}", to: "admin/#{i}#index", format: false
     match "/admin/#{i}(/:action(/:id))", to: "admin/#{i}", action: nil, id: nil, format: false
   end
