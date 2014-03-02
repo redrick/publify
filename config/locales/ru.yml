@@ -60,6 +60,7 @@ ru:
     index:
       next_page: "Next page"
       previous_page: "Previous page"
+      page: "page"
     search:
       next_page: "Next page"
       previous_page: "Previous page"
@@ -521,6 +522,8 @@ ru:
         permanent_link: "Постоянная ссылка"
         page_with_action_name: "%{action} page"
         type_your_post: "Type your post"
+        published: "published"
+        offline: "offline"
       pages:
         no_pages: "Ничего нет. Почему бы не начать и не добавить?"
     feedback:

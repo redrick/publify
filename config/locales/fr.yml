@@ -55,18 +55,19 @@ fr:
       next_page: "Next page"
       previous_page: "Previous page"
   helper:
-    at: "at"
+    at: "à"
   articles:
     index:
       next_page: "Next page"
       previous_page: "Previous page"
+      page: "page"
     search:
       next_page: "Next page"
       previous_page: "Previous page"
     comment_preview:
       is_about_to_say: "va dire"
     meta:
-      published_on: "Published on"
+      published_on: "Publié le"
       by: "par"
       tags: "Tags"
     article:
@@ -523,6 +524,8 @@ fr:
         permanent_link: "Lien permanent"
         page_with_action_name: "%{action} page"
         type_your_post: "Tapez votre texte"
+        published: "publiée"
+        offline: "hors ligne"
       pages:
         no_pages: "Il n'y a pas encore de pages, pourquoi ne pas en créer une ? "
     feedback:
