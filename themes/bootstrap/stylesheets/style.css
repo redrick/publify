@@ -2,6 +2,16 @@ body {
   background: #ccc url("../../images/theme/background.gif");
 }
 
+.ruby_logo {
+  width: 100px;
+  height: 80px;
+  float: left;
+  padding-right: 50px;
+  background: url("/images/theme/ruby.png") no-repeat;
+  background-size: 100px 80px;
+  padding-bottom: 25px;
+}
+
 #logo h1, p#title {
   font-size: 30px;
   line-height: 48px;
