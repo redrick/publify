@@ -16,18 +16,24 @@
       <div class='container'>
         <div class="row">
           <div class='span1'></div>
-          <div class='span10'>
-            <div class="ruby_logo">
-            </div>
+          <div class='span8'>
+            <div class="ruby_logo"></div>
             <%- if controller.controller_name == 'articles' and controller.action_name.include? 'index' %>
               <h1><%= link_to(this_blog.blog_name, this_blog.base_url) %></h1>
             <%- else %>
                 <p id='title'><%= link_to(this_blog.blog_name, this_blog.base_url) %></p>
             <%- end %>
               <p class='subtitle'><%= this_blog.blog_subtitle %></p>
-            </div>
           </div>
+          <div class="top_search">
+            <h3>Search</h3>
+            <%= form_tag({:controller => 'articles',  :action => 'search'}, {:method => 'get', :id => 'sform'}) do %>
+              <%= text_field_tag :q, '', {:id => "live_search", :size => 15, :autocomplete => "off", value: params[:q]} %>
+              <%= image_tag "spinner-blue.gif", :id => 'search_spinner', :style => 'display:none;' %>
+            <% end %>
+          </div>  
         </div>
+      </div>
 
         <div class='navbar navbar-inverse'>
           <div class='navbar-inner'>
