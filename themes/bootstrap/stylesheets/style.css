@@ -8,12 +8,16 @@ body {
   float: left;
   padding-right: 50px;
   background: url("/images/theme/ruby.png") no-repeat;
-  background-size: 100px 80px;
+  background-size: 100px 100px;
   padding-bottom: 25px;
 }
 
+.top_search {
+  padding-right: 149px;
+}
 .top_search h3 {
   float:right;
+  padding-right: 130px;
 }
 .top_search form {
   float:right;
