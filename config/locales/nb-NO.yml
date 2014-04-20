@@ -413,6 +413,9 @@ nb-NO:
         your_article_day: "din artikkels publiseringsdag"
         help_on_permalink_settings: "Help on permalink settings"
       index:
+        human: "Human"
+        humans_txt: "Human"
+        explain_humans_txt: "It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website. http://humanstxt.org/"
         cancel: "Annuller"
         or: "or"
         update_settings: "Oppdater innstillinger"
