@@ -30,7 +30,7 @@ end
 source 'https://rubygems.org'
 
 gem 'require_relative'
-gem 'rails', '~> 3.2.18'
+gem 'rails', '~> 3.2.16'
 gem 'htmlentities'
 gem 'bluecloth', '~> 2.1'
 gem 'coderay', '~> 1.0.8'
